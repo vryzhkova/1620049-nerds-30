@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
-* Студент: [Виктория Рыжкова](https://up.htmlacademy.ru/htmlcss/30/user/1620049).
-* Наставник: `Неизвестно`.
+- Студент: [Виктория Рыжкова](https://up.htmlacademy.ru/htmlcss/30/user/1620049).
+- Наставник: [Алина Шаймиева](https://htmlacademy.ru/profile/id74223).
 
 ---
 

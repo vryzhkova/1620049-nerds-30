@@ -141,6 +141,7 @@
         <a class="sort-item" href="#">По названию</a>
         <a class="sort-item-button" href="#">
           <img
+            class="sort-item-image"
             src="img/arrow-bottom.svg"
             width="11"
             height="10"
@@ -149,6 +150,7 @@
         </a>
         <a class="sort-item-button" href="#">
           <img
+            class="sort-item-image"
             src="img/arrow-top.svg"
             width="11"
             height="10"
@@ -298,6 +300,43 @@
         </p>
         <button type="button contacts-button">Напишите нам</button>
       </section>
+
+      <section class="form">
+        <h2 class="hidden">Напишите нам</h2>
+        <p>Напишите нам</p>
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label for="name">Ваше имя</label>
+            <input
+              id="name"
+              type="text"
+              name="name"
+              placeholder="Имя Фамилия"
+            />
+          </p>
+          <p>
+            <label for="email">Ваше имя:</label>
+            <input
+              id="email"
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </p>
+          <p>
+            <label for="text">Текст письма:</label>
+            <textarea
+              id="text"
+              type="text"
+              name="text"
+              placeholder="В свободной форме"
+            >
+            </textarea>
+          </p>
+          <button class="button" type="submit">Отправить</button>
+        </form>
+      </section>
+
       <section class="contacts">
         <h2 class="hidden">Контакты</h2>
         <ul class="contacts-list">

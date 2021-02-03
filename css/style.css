@@ -269,6 +269,7 @@ a.basket:focus {
   /* outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px; */
   margin-top: 80px;
+  color: var(--color-text-basic);
 }
 
 .main-footer .container {
@@ -314,6 +315,7 @@ a.basket:focus {
 
 .footer-text {
   width: 660px;
+
   /* outline: 5px solid rgba(243, 113, 215, 0.7);
   outline-offset: -5px; */
 }
@@ -324,7 +326,24 @@ a.basket:focus {
 
 /* Page-2: Catalog */
 
+.page-catalog {
+  outline: 5px solid rgba(92, 255, 133, 0.7);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  align-content: start;
+}
+
+.page-catalog .page-title {
+  grid-column: 1 / -1;
+  outline: 5px solid rgba(243, 113, 215, 0.7);
+  outline-offset: -5px;
+}
+
 .page-title {
+  margin: 0;
+  margin-bottom: 15px;
+  padding: 0;
   font-size: 55px;
   line-height: 55px;
   color: var(--color-text-basic);
@@ -341,6 +360,12 @@ a.basket:focus {
 }
 
 /* Filter */
+
+.filters {
+  outline: 5px solid rgba(247, 102, 44, 0.7);
+  outline-offset: -5px;
+  grid-column: 1 / 2;
+}
 
 .filter legend {
   font-size: 18px;
@@ -364,6 +389,19 @@ a.basket:focus {
   list-style: none;
 }
 
+/* Catalog */
+
+.catalog {
+  outline: 5px solid rgba(105, 44, 247, 0.7);
+  outline-offset: -5px;
+  grid-column: 2 / -1;
+}
+
+.catalog-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 /* Pagination */
 
 .pagination-list {
@@ -382,6 +420,17 @@ a.basket:focus {
 }
 
 /* Sort */
+
+.page-catalog .sort {
+  outline: 5px solid rgba(227, 247, 44, 0.7);
+  outline-offset: -5px;
+  grid-column: 2 / -1;
+  margin-bottom: 48px;
+}
+
+.sort-title {
+  color: var(--color-text-basic);
+}
 
 a.sort-item {
   color: var(--color-text-basic);

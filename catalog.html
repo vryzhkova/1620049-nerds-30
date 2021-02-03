@@ -10,26 +10,35 @@
   <body class="page-body inner-page">
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html" class="main-header-logo">
-          <img
-            src="img/nerds-logo-header.svg"
-            width="160"
-            height="65"
-            alt="Логотип «Nerds»"
-          />
-        </a>
-        <ul class="site-navigation">
-          <li><a href="blank.html">Студия</a></li>
-          <li><a href="blank.html">Клиенты</a></li>
-          <li><a href="catalog.html">Магазин</a></li>
-          <li><a href="blank.html">Контакты</a></li>
-        </ul>
-        <a class="basket" href="blank.html">Корзина</a>
+        <div class="main-navigation-wrapper">
+          <a
+            class="main-header-logo"
+            href="index.html"
+            class="main-header-logo"
+          >
+            <img
+              src="img/nerds-logo-header.svg"
+              width="160"
+              height="65"
+              alt="Логотип «Nerds»"
+            />
+          </a>
+          <ul class="site-navigation">
+            <li><a href="blank.html">Студия</a></li>
+            <li><a href="blank.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+          </ul>
+          <div class="user-busket">
+            <a class="basket" href="blank.html">Корзина</a>
+          </div>
+        </div>
       </nav>
     </header>
 
     <main class="page-catalog container">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
+
       <section class="filters">
         <h2 class="hidden">Фильтр</h2>
         <form class="filter" method="get" action="#">
@@ -133,141 +142,143 @@
           <button type="submit">Показать</button>
         </form>
       </section>
-      <section class="sort">
-        <h2 class="hidden">Сортировка</h2>
-        <p class="sort-titile">Сортировать</p>
-        <a class="sort-item" href="#">По цене</a>
-        <a class="sort-item" href="#">По типу</a>
-        <a class="sort-item" href="#">По названию</a>
-        <a class="sort-item-button" href="#">
-          <img
-            class="sort-item-image"
-            src="img/arrow-bottom.svg"
-            width="11"
-            height="10"
-            alt="Кнопка вниз"
-          />
-        </a>
-        <a class="sort-item-button" href="#">
-          <img
-            class="sort-item-image"
-            src="img/arrow-top.svg"
-            width="11"
-            height="10"
-            alt="Кнопка вверх"
-          />
-        </a>
-      </section>
-      <section class="catalog">
-        <h2 class="hidden">Каталог</h2>
-        <ul class="catalog-list">
-          <li class="catalog-items">
-            <a href="blank.html">
-              <h3 class="hidden">Sedona</h3>
-              <p>
-                <img
-                  class="catalog-image sedona"
-                  src="img/catalog/Sedona.jpg"
-                  width="360"
-                  height="578"
-                  alt="Седона"
-                />
-              </p>
-            </a>
+      <div>
+        <section class="sort">
+          <h2 class="hidden">Сортировка</h2>
+          <p class="sort-title">Сортировать</p>
+          <a class="sort-item" href="#">По цене</a>
+          <a class="sort-item" href="#">По типу</a>
+          <a class="sort-item" href="#">По названию</a>
+          <a class="sort-item-button" href="#">
+            <img
+              class="sort-item-image"
+              src="img/arrow-bottom.svg"
+              width="11"
+              height="10"
+              alt="Кнопка вниз"
+            />
+          </a>
+          <a class="sort-item-button" href="#">
+            <img
+              class="sort-item-image"
+              src="img/arrow-top.svg"
+              width="11"
+              height="10"
+              alt="Кнопка вверх"
+            />
+          </a>
+        </section>
+        <section class="catalog">
+          <h2 class="hidden">Каталог</h2>
+          <ul class="catalog-list">
+            <li class="catalog-items">
+              <a href="blank.html">
+                <h3 class="hidden">Sedona</h3>
+                <p>
+                  <img
+                    class="catalog-image sedona"
+                    src="img/catalog/Sedona.jpg"
+                    width="360"
+                    height="578"
+                    alt="Седона"
+                  />
+                </p>
+              </a>
 
-            <p class="form-title">Sedona</p>
-            <p class="form-text">
-              Информационный сайт<br />
-              для туристов
-            </p>
-            <button class="button form-button" type="button">9 900 ₽</button>
-          </li>
-          <li class="catalog-items">
-            <a href="blank.html">
-              <h3 class="hidden">Pink</h3>
-              <p>
-                <img
-                  class="catalog-image pink"
-                  src="img/catalog/Pink.jpg"
-                  width="360"
-                  height="578"
-                  alt="Пинк"
-                />
+              <p class="form-title">Sedona</p>
+              <p class="form-text">
+                Информационный сайт<br />
+                для туристов
               </p>
-            </a>
-          </li>
-          <li class="catalog-items">
-            <a href="blank.html">
-              <h3 class="hidden">Barbershop</h3>
-              <p>
-                <img
-                  class="catalog-image barber"
-                  src="img/catalog/Barbershop.jpg"
-                  width="360"
-                  height="578"
-                  alt="«Барбершоп"
-                />
-              </p>
-            </a>
-          </li>
-          <li class="catalog-items">
-            <a href="blank.html">
-              <h3 class="hidden">Mishka</h3>
-              <p>
-                <img
-                  class="catalog-image Mishka"
-                  src="img/catalog/Mishka.jpg"
-                  width="360"
-                  height="578"
-                  alt="«Мишка"
-                />
-              </p>
-            </a>
-          </li>
-          <li class="catalog-items">
-            <a href="blank.html">
-              <h3 class="hidden">Aplus</h3>
-              <p>
-                <img
-                  class="catalog-image Aplus"
-                  src="img/catalog/Aplus.jpg"
-                  width="360"
-                  height="578"
-                  alt="«А-плюс"
-                />
-              </p>
-            </a>
-          </li>
-          <li class="catalog-items">
-            <a href="blank.html">
-              <h3 class="hidden">Kvast</h3>
-              <p>
-                <img
-                  class="catalog-image Kvast"
-                  src="img/catalog/Kvast.jpg"
-                  width="360"
-                  height="578"
-                  alt="«Кваст"
-                />
-              </p>
-            </a>
-          </li>
-        </ul>
-        <ul class="pagination-list">
-          <li class="pagination-item">
-            <a>1</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a href="#">Следующая</a>
-          </li>
-        </ul>
-      </section>
+              <button class="button form-button" type="button">9 900 ₽</button>
+            </li>
+            <li class="catalog-items">
+              <a href="blank.html">
+                <h3 class="hidden">Pink</h3>
+                <p>
+                  <img
+                    class="catalog-image pink"
+                    src="img/catalog/Pink.jpg"
+                    width="360"
+                    height="578"
+                    alt="Пинк"
+                  />
+                </p>
+              </a>
+            </li>
+            <li class="catalog-items">
+              <a href="blank.html">
+                <h3 class="hidden">Barbershop</h3>
+                <p>
+                  <img
+                    class="catalog-image barber"
+                    src="img/catalog/Barbershop.jpg"
+                    width="360"
+                    height="578"
+                    alt="«Барбершоп"
+                  />
+                </p>
+              </a>
+            </li>
+            <li class="catalog-items">
+              <a href="blank.html">
+                <h3 class="hidden">Mishka</h3>
+                <p>
+                  <img
+                    class="catalog-image Mishka"
+                    src="img/catalog/Mishka.jpg"
+                    width="360"
+                    height="578"
+                    alt="«Мишка"
+                  />
+                </p>
+              </a>
+            </li>
+            <li class="catalog-items">
+              <a href="blank.html">
+                <h3 class="hidden">Aplus</h3>
+                <p>
+                  <img
+                    class="catalog-image Aplus"
+                    src="img/catalog/Aplus.jpg"
+                    width="360"
+                    height="578"
+                    alt="«А-плюс"
+                  />
+                </p>
+              </a>
+            </li>
+            <li class="catalog-items">
+              <a href="blank.html">
+                <h3 class="hidden">Kvast</h3>
+                <p>
+                  <img
+                    class="catalog-image Kvast"
+                    src="img/catalog/Kvast.jpg"
+                    width="360"
+                    height="578"
+                    alt="«Кваст"
+                  />
+                </p>
+              </a>
+            </li>
+          </ul>
+          <ul class="pagination-list">
+            <li class="pagination-item">
+              <a>1</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a href="#">Следующая</a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
 
     <footer class="main-footer">
@@ -298,82 +309,76 @@
             >+7 (812) 666-02-66</a
           >
         </p>
-        <button type="button contacts-button">Напишите нам</button>
+        <button type="button" class="button contacts-button">
+          Напишите нам
+        </button>
       </section>
-
-      <section class="form">
-        <h2 class="hidden">Напишите нам</h2>
-        <p>Напишите нам</p>
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
-            <label for="name">Ваше имя</label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              placeholder="Имя Фамилия"
-            />
-          </p>
-          <p>
-            <label for="email">Ваше имя:</label>
-            <input
-              id="email"
-              type="email"
-              name="email"
-              placeholder="email@example.com"
-            />
-          </p>
-          <p>
-            <label for="text">Текст письма:</label>
-            <textarea
-              id="text"
-              type="text"
-              name="text"
-              placeholder="В свободной форме"
-            >
-            </textarea>
-          </p>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-      </section>
-
-      <section class="contacts">
-        <h2 class="hidden">Контакты</h2>
-        <ul class="contacts-list">
-          <li class="contacts-item">
-            <a class="social-button button-vk" href="#"
-              ><img
-                class="contacts-image-vk"
-                src="img/footer/vk-icon.svg"
-                width="26"
-                height="15"
-                alt="Иконка Вконакте"
-            /></a>
-          </li>
-          <li class="contacts-item">
-            <a class="social-button button-fb" href="#"
-              ><img
-                class="contacts-image-fb"
-                src="img/footer/fb-icon.svg"
-                width="26"
-                height="15"
-                alt="Иконка Facebook"
-            /></a>
-          </li>
-          <li class="contacts-item">
-            <a class="social-button button-inst" href="#"
-              ><img
-                class="contacts-image-inst"
-                src="img/footer/insta-icon.svg"
-                width="26"
-                height="15"
-                alt="Иконка Instagramm"
-            /></a>
-          </li>
-        </ul>
-        <p class="footer-title">Давайте дружить, это выгодно!</p>
-        <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
-      </section>
+      <div class="container">
+        <section class="contacts">
+          <h2 class="hidden">Контакты</h2>
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="social-button button-vk" href="#"
+                ><img
+                  class="contacts-image-vk"
+                  src="img/footer/vk-icon.svg"
+                  width="26"
+                  height="15"
+                  alt="Иконка Вконакте"
+              /></a>
+            </li>
+            <li class="contacts-item">
+              <a class="social-button button-fb" href="#"
+                ><img
+                  class="contacts-image-fb"
+                  src="img/footer/fb-icon.svg"
+                  width="26"
+                  height="15"
+                  alt="Иконка Facebook"
+              /></a>
+            </li>
+            <li class="contacts-item">
+              <a class="social-button button-inst" href="#"
+                ><img
+                  class="contacts-image-inst"
+                  src="img/footer/insta-icon.svg"
+                  width="26"
+                  height="15"
+                  alt="Иконка Instagramm"
+              /></a>
+            </li>
+          </ul>
+        </section>
+        <section class="footer-text">
+          <p class="footer-title">Давайте дружить, это выгодно!</p>
+          <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </div>
     </footer>
+    <section class="form">
+      <h2 class="hidden">Напишите нам</h2>
+      <p>Напишите нам</p>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="name">Ваше имя</label>
+          <input id="name" type="text" name="name" placeholder="Имя Фамилия" />
+        </p>
+        <p>
+          <label for="email">Ваше имя:</label>
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="email@example.com"
+          />
+        </p>
+        <p>
+          <label for="text">Текст письма:</label>
+          <textarea id="text" name="text" placeholder="В свободной форме">
+          </textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </section>
   </body>
 </html>

@@ -30,7 +30,7 @@
             <li class="site-navigation-item">
               <a href="blank.html">Клиенты</a>
             </li>
-            <li class="site-navigation-item">
+            <li class="site-navigation-item site-navigation-item-active">
               <a href="catalog.html">Магазин</a>
             </li>
             <li class="site-navigation-item">
@@ -43,252 +43,258 @@
         </div>
       </nav>
     </header>
-
-    <main class="page-catalog container">
+    <main>
       <h1 class="page-title">Магазин готовых шаблонов</h1>
-
-      <section class="filters">
-        <h2 class="hidden">Фильтр</h2>
-        <form class="filter" method="get" action="#">
-          <fieldset>
-            <legend>Стоимость</legend>
-            <label for="price"></label>
-            <input type="range" id="price" name="points" min="0" max="15000" />
-            <p>От</p>
-            <input id="start" placeholder="0" />
-            <p>До</p>
-            <input id="finish" placeholder="15 000" />
-          </fieldset>
-          <fieldset>
-            <legend>Сетка:</legend>
-            <ul>
-              <li class="filter-option filter-radio">
-                <input
-                  class="filter-input-radio filter-input"
-                  type="radio"
-                  name="grid-group"
-                  value="adaptive"
-                  id="filter-adaptive"
-                  checked
-                />
-                <label for="filter-adaptive">Адаптивная</label>
+      <div class="page-catalog container">
+        <section class="filters">
+          <h2 class="hidden">Фильтр</h2>
+          <form class="filter" method="get" action="#">
+            <fieldset>
+              <legend>Стоимость</legend>
+              <label for="price"></label>
+              <input
+                type="range"
+                id="price"
+                name="points"
+                min="0"
+                max="15000"
+              />
+              <p>От</p>
+              <input id="start" placeholder="0" />
+              <p>До</p>
+              <input id="finish" placeholder="15 000" />
+            </fieldset>
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option filter-radio">
+                  <input
+                    class="filter-input-radio filter-input"
+                    type="radio"
+                    name="grid-group"
+                    value="adaptive"
+                    id="filter-adaptive"
+                    checked
+                  />
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input
+                    class="filter-input-radio filter-input"
+                    type="radio"
+                    name="grid-group"
+                    value="fixed"
+                    id="filter-fixed"
+                  />
+                  <label for="filter-fixed">Фиксированная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input
+                    class="filter-input-radio filter-input"
+                    type="radio"
+                    name="grid-group"
+                    value="rubber"
+                    id="filter-rubber"
+                  />
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option filter-checkbox">
+                  <input
+                    class="filter-input-checkbox filter-input"
+                    type="checkbox"
+                    name="slider"
+                    id="filter-slider"
+                    checked
+                  />
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input
+                    class="filter-input-checkbox filter-input"
+                    type="checkbox"
+                    name="advantages"
+                    id="filter-advantages"
+                  />
+                  <label for="filter-advantages">Блок преимущества</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input
+                    class="filter-input-checkbox filter-input"
+                    type="checkbox"
+                    name="news"
+                    id="filter-news"
+                    checked
+                  />
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input
+                    class="filter-input-checkbox filter-input"
+                    type="checkbox"
+                    name="gallery"
+                    id="filter-gallery"
+                  />
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input
+                    class="filter-input-checkbox filter-input"
+                    type="checkbox"
+                    name="basket"
+                    id="filter-basket"
+                  />
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="button button-filter">Показать</button>
+          </form>
+        </section>
+        <div>
+          <section class="sort">
+            <h2 class="hidden">Сортировка</h2>
+            <p class="sort-title">Сортировать</p>
+            <a class="sort-item" href="#">По цене</a>
+            <a class="sort-item" href="#">По типу</a>
+            <a class="sort-item" href="#">По названию</a>
+            <a class="sort-item-button" href="#">
+              <img
+                class="sort-item-image"
+                src="img/arrow-bottom.svg"
+                width="11"
+                height="10"
+                alt="Кнопка вниз"
+              />
+            </a>
+            <a class="sort-item-button" href="#">
+              <img
+                class="sort-item-image"
+                src="img/arrow-top.svg"
+                width="11"
+                height="10"
+                alt="Кнопка вверх"
+              />
+            </a>
+          </section>
+          <section class="catalog">
+            <h2 class="hidden">Каталог</h2>
+            <ul class="catalog-list">
+              <li class="catalog-items">
+                <a href="blank.html">
+                  <h3 class="hidden">Sedona</h3>
+                  <p>
+                    <img
+                      class="catalog-image sedona"
+                      src="img/catalog/Sedona.jpg"
+                      width="360"
+                      height="578"
+                      alt="Седона"
+                    />
+                  </p>
+                </a>
+                <div class="form-about">
+                  <p class="form-title">Sedona</p>
+                  <p class="form-text">
+                    Информационный сайт<br />
+                    для туристов
+                  </p>
+                  <button class="button form-button" type="button">
+                    9 900 ₽
+                  </button>
+                </div>
               </li>
-              <li class="filter-option filter-radio">
-                <input
-                  class="filter-input-radio filter-input"
-                  type="radio"
-                  name="grid-group"
-                  value="fixed"
-                  id="filter-fixed"
-                />
-                <label for="filter-fixed">Фиксированная</label>
+              <li class="catalog-items">
+                <a href="blank.html">
+                  <h3 class="hidden">Pink</h3>
+                  <p>
+                    <img
+                      class="catalog-image pink"
+                      src="img/catalog/Pink.jpg"
+                      width="360"
+                      height="578"
+                      alt="Пинк"
+                    />
+                  </p>
+                </a>
               </li>
-              <li class="filter-option filter-radio">
-                <input
-                  class="filter-input-radio filter-input"
-                  type="radio"
-                  name="grid-group"
-                  value="rubber"
-                  id="filter-rubber"
-                />
-                <label for="filter-rubber">Резиновая</label>
+              <li class="catalog-items">
+                <a href="blank.html">
+                  <h3 class="hidden">Barbershop</h3>
+                  <p>
+                    <img
+                      class="catalog-image barber"
+                      src="img/catalog/Barbershop.jpg"
+                      width="360"
+                      height="578"
+                      alt="«Барбершоп"
+                    />
+                  </p>
+                </a>
+              </li>
+              <li class="catalog-items">
+                <a href="blank.html">
+                  <h3 class="hidden">Mishka</h3>
+                  <p>
+                    <img
+                      class="catalog-image Mishka"
+                      src="img/catalog/Mishka.jpg"
+                      width="360"
+                      height="578"
+                      alt="«Мишка"
+                    />
+                  </p>
+                </a>
+              </li>
+              <li class="catalog-items">
+                <a href="blank.html">
+                  <h3 class="hidden">Aplus</h3>
+                  <p>
+                    <img
+                      class="catalog-image Aplus"
+                      src="img/catalog/Aplus.jpg"
+                      width="360"
+                      height="578"
+                      alt="«А-плюс"
+                    />
+                  </p>
+                </a>
+              </li>
+              <li class="catalog-items">
+                <a href="blank.html">
+                  <h3 class="hidden">Kvast</h3>
+                  <p>
+                    <img
+                      class="catalog-image Kvast"
+                      src="img/catalog/Kvast.jpg"
+                      width="360"
+                      height="578"
+                      alt="«Кваст"
+                    />
+                  </p>
+                </a>
               </li>
             </ul>
-          </fieldset>
-          <fieldset>
-            <legend>Особенности:</legend>
-            <ul>
-              <li class="filter-option filter-checkbox">
-                <input
-                  class="filter-input-checkbox filter-input"
-                  type="checkbox"
-                  name="slider"
-                  id="filter-slider"
-                  checked
-                />
-                <label for="filter-slider">Слайдер</label>
+            <ul class="pagination-list">
+              <li class="pagination-item">
+                <a class="pagination-items">1</a>
               </li>
-              <li class="filter-option filter-checkbox">
-                <input
-                  class="filter-input-checkbox filter-input"
-                  type="checkbox"
-                  name="advantages"
-                  id="filter-advantages"
-                />
-                <label for="filter-advantages">Блок преимущества</label>
+              <li class="pagination-item">
+                <a href="#" class="pagination-items">2</a>
               </li>
-              <li class="filter-option filter-checkbox">
-                <input
-                  class="filter-input-checkbox filter-input"
-                  type="checkbox"
-                  name="news"
-                  id="filter-news"
-                  checked
-                />
-                <label for="filter-news">Новости</label>
+              <li class="pagination-item">
+                <a href="#" class="pagination-items">3</a>
               </li>
-              <li class="filter-option filter-checkbox">
-                <input
-                  class="filter-input-checkbox filter-input"
-                  type="checkbox"
-                  name="gallery"
-                  id="filter-gallery"
-                />
-                <label for="filter-gallery">Галерея</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input
-                  class="filter-input-checkbox filter-input"
-                  type="checkbox"
-                  name="basket"
-                  id="filter-basket"
-                />
-                <label for="filter-basket">Корзина</label>
+              <li class="pagination-item">
+                <a href="#" class="pagination-items">Следующая</a>
               </li>
             </ul>
-          </fieldset>
-          <button type="submit">Показать</button>
-        </form>
-      </section>
-      <div>
-        <section class="sort">
-          <h2 class="hidden">Сортировка</h2>
-          <p class="sort-title">Сортировать</p>
-          <a class="sort-item" href="#">По цене</a>
-          <a class="sort-item" href="#">По типу</a>
-          <a class="sort-item" href="#">По названию</a>
-          <a class="sort-item-button" href="#">
-            <img
-              class="sort-item-image"
-              src="img/arrow-bottom.svg"
-              width="11"
-              height="10"
-              alt="Кнопка вниз"
-            />
-          </a>
-          <a class="sort-item-button" href="#">
-            <img
-              class="sort-item-image"
-              src="img/arrow-top.svg"
-              width="11"
-              height="10"
-              alt="Кнопка вверх"
-            />
-          </a>
-        </section>
-        <section class="catalog">
-          <h2 class="hidden">Каталог</h2>
-          <ul class="catalog-list">
-            <li class="catalog-items">
-              <a href="blank.html">
-                <h3 class="hidden">Sedona</h3>
-                <p>
-                  <img
-                    class="catalog-image sedona"
-                    src="img/catalog/Sedona.jpg"
-                    width="360"
-                    height="578"
-                    alt="Седона"
-                  />
-                </p>
-              </a>
-              <div class="form-about">
-                <p class="form-title">Sedona</p>
-                <p class="form-text">
-                  Информационный сайт<br />
-                  для туристов
-                </p>
-                <button class="button form-button" type="button">
-                  9 900 ₽
-                </button>
-              </div>
-            </li>
-            <li class="catalog-items">
-              <a href="blank.html">
-                <h3 class="hidden">Pink</h3>
-                <p>
-                  <img
-                    class="catalog-image pink"
-                    src="img/catalog/Pink.jpg"
-                    width="360"
-                    height="578"
-                    alt="Пинк"
-                  />
-                </p>
-              </a>
-            </li>
-            <li class="catalog-items">
-              <a href="blank.html">
-                <h3 class="hidden">Barbershop</h3>
-                <p>
-                  <img
-                    class="catalog-image barber"
-                    src="img/catalog/Barbershop.jpg"
-                    width="360"
-                    height="578"
-                    alt="«Барбершоп"
-                  />
-                </p>
-              </a>
-            </li>
-            <li class="catalog-items">
-              <a href="blank.html">
-                <h3 class="hidden">Mishka</h3>
-                <p>
-                  <img
-                    class="catalog-image Mishka"
-                    src="img/catalog/Mishka.jpg"
-                    width="360"
-                    height="578"
-                    alt="«Мишка"
-                  />
-                </p>
-              </a>
-            </li>
-            <li class="catalog-items">
-              <a href="blank.html">
-                <h3 class="hidden">Aplus</h3>
-                <p>
-                  <img
-                    class="catalog-image Aplus"
-                    src="img/catalog/Aplus.jpg"
-                    width="360"
-                    height="578"
-                    alt="«А-плюс"
-                  />
-                </p>
-              </a>
-            </li>
-            <li class="catalog-items">
-              <a href="blank.html">
-                <h3 class="hidden">Kvast</h3>
-                <p>
-                  <img
-                    class="catalog-image Kvast"
-                    src="img/catalog/Kvast.jpg"
-                    width="360"
-                    height="578"
-                    alt="«Кваст"
-                  />
-                </p>
-              </a>
-            </li>
-          </ul>
-          <ul class="pagination-list">
-            <li class="pagination-item">
-              <a>1</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#">2</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#">3</a>
-            </li>
-            <li class="pagination-item">
-              <a href="#">Следующая</a>
-            </li>
-          </ul>
-        </section>
+          </section>
+        </div>
       </div>
     </main>
 

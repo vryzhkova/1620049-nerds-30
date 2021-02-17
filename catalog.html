@@ -10,7 +10,7 @@
   <body class="page-body inner-page">
     <header class="main-header">
       <nav class="main-navigation">
-        <div class="main-navigation-wrapper">
+        <div class="main-navigation-wrapper main-navigation-wrapper-catalog">
           <a
             class="main-header-logo"
             href="index.html"
@@ -49,27 +49,42 @@
         <section class="filters">
           <h2 class="hidden">Фильтр</h2>
           <form class="filter" method="get" action="#">
-            <fieldset>
-              <legend>Стоимость</legend>
-              <label for="price"></label>
-              <input
-                type="range"
-                id="price"
-                name="points"
-                min="0"
-                max="15000"
-              />
-              <p>От</p>
-              <input id="start" placeholder="0" />
-              <p>До</p>
-              <input id="finish" placeholder="15 000" />
+            <!-- Range -->
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar" style="width: 30%; margin-left: 20%"></div>
+                  </div>
+                  <div
+                    class="toggle toggle-min"
+                    tabindex="0"
+                    style="left: 20%"
+                  ></div>
+                  <div
+                    class="toggle toggle-max"
+                    tabindex="0"
+                    style="left: 50%"
+                  ></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="text" name="min-price" value="0" />
+                  </label>
+                  <label class="max-price">
+                    до <input type="text" name="max-price" value="15000" />
+                  </label>
+                </div>
+              </div>
             </fieldset>
+            <!-- Filter-radio -->
             <fieldset>
               <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option filter-radio">
                   <input
-                    class="filter-input-radio filter-input"
+                    class="hidden filter-input-radio filter-input"
                     type="radio"
                     name="grid-group"
                     value="adaptive"
@@ -80,7 +95,7 @@
                 </li>
                 <li class="filter-option filter-radio">
                   <input
-                    class="filter-input-radio filter-input"
+                    class="hidden filter-input-radio filter-input"
                     type="radio"
                     name="grid-group"
                     value="fixed"
@@ -90,7 +105,7 @@
                 </li>
                 <li class="filter-option filter-radio">
                   <input
-                    class="filter-input-radio filter-input"
+                    class="hidden filter-input-radio filter-input"
                     type="radio"
                     name="grid-group"
                     value="rubber"
@@ -100,12 +115,13 @@
                 </li>
               </ul>
             </fieldset>
+            <!-- Filter-checkbox -->
             <fieldset>
               <legend>Особенности:</legend>
               <ul>
                 <li class="filter-option filter-checkbox">
                   <input
-                    class="filter-input-checkbox filter-input"
+                    class="hidden filter-input-checkbox filter-input"
                     type="checkbox"
                     name="slider"
                     id="filter-slider"
@@ -115,7 +131,7 @@
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input
-                    class="filter-input-checkbox filter-input"
+                    class="hidden filter-input-checkbox filter-input"
                     type="checkbox"
                     name="advantages"
                     id="filter-advantages"
@@ -124,7 +140,7 @@
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input
-                    class="filter-input-checkbox filter-input"
+                    class="hidden filter-input-checkbox filter-input"
                     type="checkbox"
                     name="news"
                     id="filter-news"
@@ -134,7 +150,7 @@
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input
-                    class="filter-input-checkbox filter-input"
+                    class="hidden filter-input-checkbox filter-input"
                     type="checkbox"
                     name="gallery"
                     id="filter-gallery"
@@ -143,7 +159,7 @@
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input
-                    class="filter-input-checkbox filter-input"
+                    class="hidden filter-input-checkbox filter-input"
                     type="checkbox"
                     name="basket"
                     id="filter-basket"
@@ -281,7 +297,7 @@
             </ul>
             <ul class="pagination-list">
               <li class="pagination-item">
-                <a class="pagination-items">1</a>
+                <a class="pagination-items first">1</a>
               </li>
               <li class="pagination-item">
                 <a href="#" class="pagination-items">2</a>
@@ -310,25 +326,27 @@
         />
         <img
           class="map-marker-image"
-          src="img/footer/map-marker.jpg"
+          src="img/footer/map-marker.png"
           width="231"
           height="190"
           alt="Отметка на карте"
         />
-        <p class="adress-title">NЁRDS DESIGN STUDIO</p>
-        <p class="adress-contacts">
-          191186, Санкт-Петербург,<br />
-          ул. Б. Конюшенная, д. 19
-        </p>
-        <p class="adress-phone">
-          тел.
-          <a class="contacts-phone" href="tel:+78126660266"
-            >+7 (812) 666-02-66</a
-          >
-        </p>
-        <button type="button" class="button contacts-button">
-          Напишите нам
-        </button>
+        <div class="footer-form">
+          <p class="adress-title">NЁRDS DESIGN STUDIO</p>
+          <p class="adress-contacts">
+            191186, Санкт-Петербург,<br />
+            ул. Б. Конюшенная, д. 19
+          </p>
+          <p class="adress-phone">
+            тел.
+            <a class="contacts-phone" href="tel:+78126660266"
+              >+7 (812) 666-02-66</a
+            >
+          </p>
+          <button type="button" class="button contacts-button">
+            Напишите нам
+          </button>
+        </div>
       </section>
       <div class="container">
         <section class="contacts">
@@ -337,7 +355,7 @@
             <li class="contacts-item">
               <a class="social-button button-vk" href="#"
                 ><img
-                  class="contacts-image-vk"
+                  class="contacts-image"
                   src="img/footer/vk-icon.svg"
                   width="26"
                   height="15"
@@ -345,22 +363,22 @@
               /></a>
             </li>
             <li class="contacts-item">
-              <a class="social-button button-fb" href="#"
+              <a class="social-button button" href="#"
                 ><img
-                  class="contacts-image-fb"
+                  class="contacts-image"
                   src="img/footer/fb-icon.svg"
-                  width="26"
-                  height="15"
+                  width="12"
+                  height="22"
                   alt="Иконка Facebook"
               /></a>
             </li>
             <li class="contacts-item">
               <a class="social-button button-inst" href="#"
                 ><img
-                  class="contacts-image-inst"
+                  class="contacts-image"
                   src="img/footer/insta-icon.svg"
-                  width="26"
-                  height="15"
+                  width="21"
+                  height="21"
                   alt="Иконка Instagramm"
               /></a>
             </li>

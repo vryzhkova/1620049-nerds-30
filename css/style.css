@@ -1095,7 +1095,7 @@ a.sort-item-image:focus {
   padding-left: 101px;
   color: var(--color-text-basic);
 
-  /* display: none; */
+  display: none;
 }
 
 .modal-title {

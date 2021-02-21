@@ -1087,15 +1087,14 @@ a.sort-item-image:focus {
   position: fixed;
   width: 960px;
   height: 590px;
-  top: 1660px;
-  left: -36px;
-  margin-left: 240px;
+  top: 50px;
+  left: 480px;
+
   background-color: #fff;
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
   padding-left: 101px;
   color: var(--color-text-basic);
-
-  display: none;
+  /* display: none; */
 }
 
 .modal-title {

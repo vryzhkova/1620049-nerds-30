@@ -69,6 +69,13 @@
               height="430"
               alt="Слайд первый - телефоны"
             />
+            <!-- <img
+              class="swiper-slider"
+              src="img/swiper.svg"
+              width="88"
+              height="18"
+              alt="Переключтель слайдов"
+            /> -->
           </div>
           <div class="features slide2">
             <p class="feature-item">
@@ -234,14 +241,21 @@
           <li class="clients-items">
             <a href="#" class="clients-logo"
               ><img
-                class="clients-item logo-HTML"
+                class="clients-item logo-htmlacademy"
                 src="img/clients/logohtmlacademy.svg"
-                width="200"
+                width="199"
                 height="68"
                 alt="Клиент «HTMLacademy»"
             /></a>
+            <img
+              class="line"
+              src="img/line.png"
+              width="2"
+              height="68"
+              alt="Клиент «HTMLacademy»"
+            />
           </li>
-          <hr class="hr-vertical" />
+
           <li class="clients-items">
             <a href="#" class="clients-logo"
               ><img
@@ -251,8 +265,15 @@
                 height="68"
                 alt="Клиент «Барбершоп Бородинский»"
             /></a>
+            <img
+              class="line"
+              src="img/line.png"
+              width="2"
+              height="68"
+              alt="Клиент «HTMLacademy»"
+            />
           </li>
-          <hr class="hr-vertical" />
+
           <li class="clients-items">
             <a href="#" class="clients-logo"
               ><img
@@ -262,8 +283,15 @@
                 height="68"
                 alt="Клиент «Pink»"
             /></a>
+            <img
+              class="line"
+              src="img/line.png"
+              width="2"
+              height="68"
+              alt="Клиент «HTMLacademy»"
+            />
           </li>
-          <hr class="hr-vertical" />
+
           <li class="clients-items">
             <a href="#" class="clients-logo"
               ><img
@@ -317,8 +345,10 @@
       <div class="footer container">
         <ul class="contacts-list">
           <li class="contacts-item">
-            <a class="social-button button-vk" href="#"
+            <a class="social-button button-vk" href="#" aria-label="Вконтакте"
               ><svg
+                aria-hidden="true"
+                focusable="false"
                 class="contacts-image"
                 width="27"
                 height="15"
@@ -333,8 +363,10 @@
             </a>
           </li>
           <li class="contacts-item">
-            <a class="social-button button" href="#"
+            <a class="social-button button-fb" href="#" aria-label="Фейсбук"
               ><svg
+                aria-hidden="true"
+                focusable="false"
                 class="contacts-image"
                 width="12"
                 height="22"
@@ -349,8 +381,13 @@
             </a>
           </li>
           <li class="contacts-item">
-            <a class="social-button button-inst" href="#"
+            <a
+              class="social-button button-inst"
+              href="#"
+              aria-label="Инстаграмм"
               ><svg
+                aria-hidden="true"
+                focusable="false"
                 class="contacts-image"
                 width="21"
                 height="21"
@@ -399,8 +436,11 @@
         </p>
         <p class="appointment-item">
           <label class="modal-p" for="text">Текст письма:</label>
-          <textarea id="text" name="text" placeholder="В свободной форме">
-          </textarea>
+          <textarea
+            id="text"
+            name="text"
+            placeholder="В свободной форме"
+          ></textarea>
         </p>
         <button class="button modal-button" type="submit">Отправить</button>
       </form>

@@ -48,7 +48,7 @@
       <div class="page-catalog container">
         <section class="filters">
           <h2 class="hidden">Фильтр</h2>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <form class="filter" method="get" action="https://echo.htmlacademy.ru" target="_blank">
             <!-- Range -->
             <fieldset class="filter-item">
               <legend>Стоимость:</legend>
@@ -385,7 +385,7 @@
             </ul>
             <ul class="pagination-list">
               <li class="pagination-item">
-                <a class="pagination-items first">1</a>
+                <a class="pagination-items pagination-items-active">1</a>
               </li>
               <li class="pagination-item">
                 <a href="#" class="pagination-items">2</a>
@@ -402,7 +402,7 @@
       </div>
     </main>
 
-      <footer class="main-footer">
+<footer class="main-footer">
       <section class="map">
         <h2 class="hidden">Карта</h2>
         <iframe
@@ -441,8 +441,10 @@
       <div class="footer container">
         <ul class="contacts-list">
           <li class="contacts-item">
-            <a class="social-button button-vk" href="#"
+            <a class="social-button button-vk" href="#" aria-label="Вконтакте"
               ><svg
+                aria-hidden="true"
+                focusable="false"
                 class="contacts-image"
                 width="27"
                 height="15"
@@ -457,8 +459,10 @@
             </a>
           </li>
           <li class="contacts-item">
-            <a class="social-button button" href="#"
+            <a class="social-button button-fb" href="#" aria-label="Фейсбук"
               ><svg
+                aria-hidden="true"
+                focusable="false"
                 class="contacts-image"
                 width="12"
                 height="22"
@@ -473,8 +477,13 @@
             </a>
           </li>
           <li class="contacts-item">
-            <a class="social-button button-inst" href="#"
+            <a
+              class="social-button button-inst"
+              href="#"
+              aria-label="Инстаграмм"
               ><svg
+                aria-hidden="true"
+                focusable="false"
                 class="contacts-image"
                 width="21"
                 height="21"
@@ -498,6 +507,7 @@
         </div>
       </div>
     </footer>
+    <!-- <div class="container"> -->
     <section class="modal">
       <h2 class="hidden">Напишите нам</h2>
       <p class="modal-title">Напишите нам</p>
@@ -522,8 +532,11 @@
         </p>
         <p class="appointment-item">
           <label class="modal-p" for="text">Текст письма:</label>
-          <textarea id="text" name="text" placeholder="В свободной форме">
-          </textarea>
+          <textarea
+            id="text"
+            name="text"
+            placeholder="В свободной форме"
+          ></textarea>
         </p>
         <button class="button modal-button" type="submit">Отправить</button>
       </form>

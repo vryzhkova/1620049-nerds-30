@@ -236,6 +236,12 @@ a.basket:active {
   margin-bottom: 25px;
 }
 
+/* .features-slides {
+  width: 18px;
+  height: 18px;
+  background: #ffffff;
+} */
+
 .features.slide1 {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -264,6 +270,12 @@ a.more:active {
   border-radius: 3px;
   color: rgba(255, 255, 255, 0.3);
 }
+
+/* .swiper-slider {
+  position: relative;
+  top: 0px;
+  left: 0px;
+} */
 
 /* Services*/
 
@@ -462,15 +474,12 @@ p.about-us-content {
 
 /* Clients */
 
-.hr-vertical {
-  width: 2px;
-  height: 52px;
-  background: #eeeeee;
-  margin: 0;
-}
-
 .clients-item {
   padding: 0;
+}
+
+.line {
+  padding-left: 48px;
 }
 
 .clients-list {
@@ -522,8 +531,8 @@ a.clients-logo:active {
 
 .map-marker-image {
   position: absolute;
-  top: 80px;
-  left: 860px;
+  top: 16px;
+  left: 960px;
 }
 
 .footer-form {
@@ -756,6 +765,16 @@ a.clients-logo:active {
   padding-left: 45px;
 }
 
+.filter-option label::before,
+.filter-option label::after {
+  opacity: 0.4;
+}
+
+.filter-option:hover label::before,
+.filter-option:hover label::after {
+  opacity: 1;
+}
+
 .filter-input-radio + label::before {
   content: "";
   position: absolute;
@@ -765,7 +784,7 @@ a.clients-logo:active {
   height: 25px;
   border: 2px solid #000000;
   border-radius: 50%;
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 
 .filter-input-radio:checked + label::after {
@@ -776,7 +795,7 @@ a.clients-logo:active {
   width: 9px;
   height: 9px;
   background-color: #000000;
-  opacity: 0.4;
+  /* opacity: 0.4; */
   border-radius: 50%;
 }
 
@@ -795,7 +814,7 @@ a.clients-logo:active {
   width: 23px;
   height: 23px;
   border: 2px solid #000000;
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -808,12 +827,12 @@ a.clients-logo:active {
   background-image: url("../img/cross.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
-  opacity: 0.4;
+  /* opacity: 0.4; */
 }
 
-ul li:hover label {
+/* ul li:hover label {
   color: red;
-}
+} */
 
 .filter legend {
   font-size: 18px;
@@ -969,7 +988,7 @@ ul li:hover label {
   margin-left: 140px;
 }
 
-a.pagination-items {
+.pagination-items {
   color: var(--color-text-basic);
   background-color: var(--pagination-button);
   display: block;
@@ -977,16 +996,21 @@ a.pagination-items {
   border-radius: 3px;
 }
 
+.pagination-items-active {
+  box-shadow: inset 0px 0px 0px 3px #dbdbdb;
+  background-color: white;
+}
+
 .pagination-item {
   margin-right: 11px;
 }
 
-a.first {
+/* a.first {
   background-color: #ffffff;
-  border: 3px solid #dbdbdb;
-  box-sizing: border-box;
+  border: 3px solid ;
+  
   border-radius: 3px;
-}
+} */
 
 .pagination-item:last-child {
   margin-right: 0;
@@ -1155,6 +1179,11 @@ a.sort-item-button:active {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.appointment-form textarea {
+  padding-left: 15px;
+  padding-top: 10px;
 }
 
 .appointment-item label {

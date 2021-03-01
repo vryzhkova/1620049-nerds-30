@@ -247,13 +247,13 @@
                 height="68"
                 alt="Клиент «HTMLacademy»"
             /></a>
-            <img
+            <!-- <img
               class="line"
               src="img/line.png"
               width="2"
               height="68"
               alt="Клиент «HTMLacademy»"
-            />
+            /> -->
           </li>
 
           <li class="clients-items">
@@ -265,13 +265,13 @@
                 height="68"
                 alt="Клиент «Барбершоп Бородинский»"
             /></a>
-            <img
+            <!-- <img
               class="line"
               src="img/line.png"
               width="2"
               height="68"
               alt="Клиент «HTMLacademy»"
-            />
+            /> -->
           </li>
 
           <li class="clients-items">
@@ -283,13 +283,13 @@
                 height="68"
                 alt="Клиент «Pink»"
             /></a>
-            <img
+            <!-- <img
               class="line"
               src="img/line.png"
               width="2"
               height="68"
               alt="Клиент «HTMLacademy»"
-            />
+            /> -->
           </li>
 
           <li class="clients-items">
@@ -423,7 +423,13 @@
       >
         <p class="appointment-item">
           <label class="modal-p" for="name">Ваше имя:</label>
-          <input id="name" type="text" name="name" placeholder="Имя Фамилия" />
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Имя Фамилия"
+            required
+          />
         </p>
         <p class="appointment-item">
           <label class="modal-p" for="email">Ваш email:</label>
@@ -432,6 +438,7 @@
             type="email"
             name="email"
             placeholder="email@example.com"
+            required
           />
         </p>
         <p class="appointment-item">
@@ -445,6 +452,12 @@
         <button class="button modal-button" type="submit">Отправить</button>
       </form>
     </section>
-    <!-- </div> -->
+
+    <script src="js/modal.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKF7SqdcEhdD9OAADL7iIJODJT_swW_Ms&callback=initMap"
+      async
+      defer
+    ></script>
   </body>
 </html>

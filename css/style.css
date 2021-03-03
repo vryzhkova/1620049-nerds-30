@@ -148,8 +148,8 @@ a.main-header-logo:active {
 .site-navigation {
   list-style: none;
   margin: 0 auto;
-  padding-top: 10px;
-  padding-right: 100px;
+  padding-top: 8px;
+  padding-right: 86px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -237,11 +237,10 @@ a.basket:active {
   margin-bottom: 25px;
 }
 
-/* .features-slides {
-  width: 18px;
-  height: 18px;
-  background: #ffffff;
-} */
+.slide1-image {
+  margin-top: -10px;
+  margin-left: 10px;
+}
 
 .features.slide1 {
   display: grid;
@@ -249,7 +248,7 @@ a.basket:active {
 }
 
 .benefits-item {
-  margin-bottom: 55px;
+  margin-bottom: 53px;
   font-weight: 400;
 }
 
@@ -287,7 +286,9 @@ a.more:active {
 .services-list {
   list-style: none;
   margin: 0;
+  margin-bottom: -4px;
   padding: 0;
+  padding-top: 10px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 40px;
@@ -314,7 +315,7 @@ a.more:active {
 }
 
 .services-text {
-  margin-bottom: 32px;
+  margin-bottom: 30px;
   font-weight: 400;
   text-align: left;
 }
@@ -383,15 +384,15 @@ hr {
 .about-us {
   display: grid;
   grid-template-columns: 2fr 1fr;
-  padding-top: 25px;
-  padding-bottom: 70px;
+  padding-top: 29px;
+  padding-bottom: 66px;
   height: 430px;
 }
 
 .about-us-title {
   font-size: 45px;
   line-height: 45px;
-  margin-bottom: 30px;
+  margin-bottom: 33px;
 }
 
 .about-us-text {
@@ -419,8 +420,8 @@ hr {
   height: 2px;
   background: #fb565a;
   position: absolute;
-  left: -35px;
-  bottom: 10px;
+  left: -36px;
+  bottom: 11px;
 }
 
 p.about-us-content {
@@ -446,24 +447,28 @@ p.about-us-content {
 
 .nerds-illustration {
   margin-top: 10px;
+  margin-left: 2px;
 }
 
 .benefit-number {
   font-size: 45px;
   line-height: 64px;
   margin: 0;
-  padding-top: 20px;
+  padding-top: 21px;
+  padding-left: 2px;
 }
 
 .about-us-benefit {
   text-transform: uppercase;
-  margin-top: 35px;
+  margin-top: 37px;
   margin-bottom: 10px;
   padding-left: 20px;
 }
 
 .benefit-text {
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-left: 2px;
+  line-height: normal;
 }
 
 .percent {
@@ -535,6 +540,10 @@ a.clients-logo:active {
   opacity: 0.1;
 }
 
+/* .logo-htmlacademy {
+  padding-right: 3px;
+} */
+
 /* Main-Footer */
 .main-footer {
   background-color: var(--background-page);
@@ -552,6 +561,7 @@ a.clients-logo:active {
 
 .map {
   padding-bottom: 5px;
+  margin-top: 7px;
   position: relative;
   padding: 0;
 }
@@ -563,13 +573,13 @@ a.clients-logo:active {
 .map-marker-image {
   position: absolute;
   top: 16px;
-  left: 960px;
+  left: 709px;
 }
 
 .footer-form {
   position: absolute;
-  top: 50px;
-  left: 433px;
+  top: 46px;
+  left: 180px;
   background-color: white;
   padding: 49px 39px 47px 50px;
 }
@@ -581,6 +591,7 @@ a.clients-logo:active {
   gap: 9px;
   list-style: none;
   padding: 0;
+  padding-bottom: 15px;
   margin: 0;
 }
 
@@ -650,8 +661,9 @@ a.clients-logo:active {
   line-height: 36px;
   font-weight: 500;
   padding: 0;
+  padding-left: 3px;
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 33px;
 }
 
 .footer-sale {
@@ -659,6 +671,10 @@ a.clients-logo:active {
 }
 
 /* Page-2: Catalog */
+
+.main-navigation-wrapper-catalog {
+  margin-top: 3px;
+}
 
 .page-catalog {
   display: grid;
@@ -674,8 +690,8 @@ a.clients-logo:active {
 
 .page-title {
   margin: 0;
-  padding-bottom: 108px;
-  padding-top: 72px;
+  padding-bottom: 114px;
+  padding-top: 68px;
   font-size: 55px;
   line-height: 55px;
   color: var(--color-text-basic);
@@ -698,7 +714,8 @@ a.clients-logo:active {
 
 .filters {
   grid-column: 1 / 2;
-  padding-top: 55px;
+  padding-top: 54px;
+  padding-left: 4px;
   width: 260px;
 }
 
@@ -883,7 +900,9 @@ a.clients-logo:active {
 .filters fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 47px;
+  margin-top: 5px;
+  margin-left: -6px;
+  margin-bottom: 36px;
   border: none;
 }
 
@@ -922,14 +941,14 @@ a.clients-logo:active {
   padding: 0;
   padding-left: 140px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 43px;
   list-style: none;
 }
 
 .catalog-items {
   width: 350px;
   max-height: 578px;
-  margin-right: 42px;
+  margin-right: 50px;
   margin-bottom: 65px;
 }
 
@@ -1030,6 +1049,12 @@ a.clients-logo:active {
 
 .pagination-item:last-child {
   margin-right: 0;
+  width: 250px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.pagination-items-next {
 }
 
 a.pagination-items:hover {
@@ -1074,6 +1099,7 @@ a.sort-item {
 }
 
 a.sort-item-button {
+  padding: 0;
   padding-top: 15px;
   opacity: 0.3;
 }

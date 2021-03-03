@@ -11,11 +11,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <div class="main-navigation-wrapper main-navigation-wrapper-catalog">
-          <a
-            class="main-header-logo"
-            href="index.html"
-            class="main-header-logo"
-          >
+          <a class="main-header-logo" href="index.html">
             <img
               src="img/nerds-logo-header.svg"
               width="160"
@@ -48,7 +44,12 @@
       <div class="page-catalog container">
         <section class="filters">
           <h2 class="hidden">Фильтр</h2>
-          <form class="filter" method="get" action="https://echo.htmlacademy.ru" target="_blank">
+          <form
+            class="filter"
+            method="get"
+            action="https://echo.htmlacademy.ru"
+            target="_blank"
+          >
             <!-- Range -->
             <fieldset class="filter-item">
               <legend>Стоимость:</legend>
@@ -91,7 +92,9 @@
                     id="filter-adaptive"
                     checked
                   />
-                  <label class ="filter-adaptive" for="filter-adaptive">Адаптивная</label>
+                  <label class="filter-adaptive" for="filter-adaptive"
+                    >Адаптивная</label
+                  >
                 </li>
                 <li class="filter-option filter-radio">
                   <input
@@ -179,15 +182,26 @@
             <a class="sort-item" href="#">По типу</a>
             <a class="sort-item" href="#">По названию</a>
             <a class="sort-item-button" href="#">
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.5 10L0 0H11" fill="#231F20"/>
-</svg>
-
+              <svg
+                width="11"
+                height="10"
+                viewBox="0 0 11 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5.5 10L0 0H11" fill="#231F20" />
+              </svg>
             </a>
             <a class="sort-item-button" href="#">
-              <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20"/>
-</svg>
+              <svg
+                width="11"
+                height="10"
+                viewBox="0 0 11 10"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M5.5 0L0 10H11L5.5 0Z" fill="#231F20" />
+              </svg>
             </a>
           </section>
           <section class="catalog">
@@ -204,7 +218,6 @@
                       height="40"
                       alt="Браузер"
                     />
-
                     <img
                       class="catalog-image sedona"
                       src="img/catalog/Sedona.jpg"
@@ -212,19 +225,18 @@
                       height="578"
                       alt="Седона"
                     />
-                    <div class="form-about">
-                      <p class="form-title">Sedona</p>
-                      <p class="form-text">
-                        Информационный сайт<br />
-                        для туристов
-                      </p>
-                      <button class="button form-button" type="button">
-                        9 900 ₽
-                      </button>
-                    </div>
                   </p>
                 </a>
-                
+                <div class="form-about">
+                  <p class="form-title">Sedona</p>
+                  <p class="form-text">
+                    Информационный сайт<br />
+                    для туристов
+                  </p>
+                  <button class="button form-button" type="button">
+                    9 900 ₽
+                  </button>
+                </div>
               </li>
               <li class="catalog-items">
                 <a href="blank.html">
@@ -245,7 +257,8 @@
                       alt="Пинк"
                     />
                   </p>
-                  <div class="form-about">
+                </a>
+                <div class="form-about">
                   <p class="form-title">Pink</p>
                   <p class="form-text">
                     Информационный сайт<br />
@@ -255,8 +268,6 @@
                     9 900 ₽
                   </button>
                 </div>
-                </a>
-                
               </li>
               <li class="catalog-items">
                 <a href="blank.html">
@@ -402,7 +413,7 @@
       </div>
     </main>
 
-<footer class="main-footer">
+    <footer class="main-footer">
       <section class="map">
         <h2 class="hidden">Карта</h2>
         <iframe

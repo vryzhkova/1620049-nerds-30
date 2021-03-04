@@ -453,8 +453,8 @@
       </section>
       <div class="footer container">
         <ul class="contacts-list">
-          <li class="contacts-item">
-            <a class="social-button button-vk" href="#" aria-label="Вконтакте"
+          <li>
+            <a class="social-button" href="#" aria-label="Вконтакте"
               ><svg
                 aria-hidden="true"
                 focusable="false"
@@ -471,8 +471,8 @@
               </svg>
             </a>
           </li>
-          <li class="contacts-item">
-            <a class="social-button button-fb" href="#" aria-label="Фейсбук"
+          <li>
+            <a class="social-button" href="#" aria-label="Фейсбук"
               ><svg
                 aria-hidden="true"
                 focusable="false"
@@ -489,11 +489,8 @@
               </svg>
             </a>
           </li>
-          <li class="contacts-item">
-            <a
-              class="social-button button-inst"
-              href="#"
-              aria-label="Инстаграмм"
+          <li>
+            <a class="social-button" href="#" aria-label="Инстаграмм"
               ><svg
                 aria-hidden="true"
                 focusable="false"
@@ -515,8 +512,10 @@
         </ul>
 
         <div class="footer-text">
-          <p class="footer-title">Давайте дружить, это выгодно!</p>
-          <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
+          <p class="footer-p footer-title">Давайте дружить, это выгодно!</p>
+          <p class="footer-p footer-sale">
+            Скидка 10% для друзей из социальных сетей.
+          </p>
         </div>
       </div>
     </footer>
@@ -530,27 +529,34 @@
         action="https://echo.htmlacademy.ru"
         method="post"
       >
-        <p class="appointment-item">
+        <div class="appointment-item">
           <label class="modal-p" for="name">Ваше имя:</label>
-          <input id="name" type="text" name="name" placeholder="Имя Фамилия" />
-        </p>
-        <p class="appointment-item">
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Имя Фамилия"
+            required
+          />
+        </div>
+        <div class="appointment-item">
           <label class="modal-p" for="email">Ваш email:</label>
           <input
             id="email"
             type="email"
             name="email"
             placeholder="email@example.com"
+            required
           />
-        </p>
-        <p class="appointment-item">
+        </div>
+        <div class="appointment-item appointment-form-textarea">
           <label class="modal-p" for="text">Текст письма:</label>
           <textarea
             id="text"
             name="text"
             placeholder="В свободной форме"
           ></textarea>
-        </p>
+        </div>
         <button class="button modal-button" type="submit">Отправить</button>
       </form>
     </section>

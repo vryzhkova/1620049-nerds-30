@@ -68,7 +68,6 @@
   background-color: var(--background-page);
   background-position: top center;
   background-repeat: no-repeat;
-
   min-height: 100%;
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -101,8 +100,6 @@ a {
   text-decoration: none;
 }
 
-/* Grid */
-
 img {
   max-width: 100%;
   height: auto;
@@ -120,9 +117,6 @@ a.main-header-logo:hover {
 
 a.main-header-logo:active {
   opacity: 0.3;
-}
-
-.main-header-bar {
 }
 
 /* Main navigation */
@@ -156,10 +150,6 @@ a.main-header-logo:active {
   width: 435px;
   color: var(--color-text-basic);
   text-transform: uppercase;
-}
-
-.site-navigation-item {
-  /* padding-right: 10px; */
 }
 
 .site-navigation-item:not(:last-child) {
@@ -233,8 +223,9 @@ a.basket:active {
 .feature-item {
   font-size: 55px;
   line-height: 55px;
-  margin-top: 70px;
-  margin-bottom: 25px;
+  margin-top: 68px;
+  margin-bottom: 27px;
+  margin-left: -2px;
 }
 
 .slide1-image {
@@ -270,12 +261,6 @@ a.more:active {
   border-radius: 3px;
   color: rgba(255, 255, 255, 0.3);
 }
-
-/* .swiper-slider {
-  position: relative;
-  top: 0px;
-  left: 0px;
-} */
 
 /* Services*/
 
@@ -480,52 +465,65 @@ p.about-us-content {
 
 /* Clients */
 
-.clients-item {
+.clients-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
   padding: 0;
+  margin: 0;
 }
 
-/* .line {
-  padding-left: 48px;
-} */
+.clients-items {
+  padding: 0;
+  position: relative;
+}
 
-.clients-list {
+.logo-htmlacademy {
+  padding: 0;
+  padding-top: 20px;
+  padding-right: 15px;
+  margin: 0;
+}
+
+.logo-barber {
+  padding: 0;
+  padding-top: 10px;
+  padding-right: 7px;
+  margin: 0;
+}
+
+.logo-pink {
+  padding-top: 6px;
+  padding-left: 6px;
+}
+
+.logo-mishka {
+  padding-top: 9px;
+  padding-left: 10px;
+}
+
+.clients-items {
   margin: 0;
   padding: 0;
   display: flex;
   list-style: none;
   min-height: 180px;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .clients-items {
   position: relative;
 }
 
-/* .clients-items:not(:last-child):after {
-  position: absolute;
-  top: 17px;
-  left: 235px;
-  width: 2px;
-  height: 52px;
-  content: "";
-  background-color: #eeeeee;
-} */
-
 .clients-items:not(:last-child):after {
-  content: "";
-  border: none;
-  background-color: #eeeeee;
-  /* color: #eeeeee; */
-  height: 52px;
-  width: 2px;
   position: absolute;
-  margin: 0;
-  padding: 0;
-  vertical-align: middle;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 35px;
+  top: 64px;
+  left: 278px;
+  width: 2px;
+  height: 52px;
+  content: "";
+  background-color: #eeeeee;
 }
 
 a.clients-logo {
@@ -540,11 +538,8 @@ a.clients-logo:active {
   opacity: 0.1;
 }
 
-/* .logo-htmlacademy {
-  padding-right: 3px;
-} */
-
 /* Main-Footer */
+
 .main-footer {
   background-color: var(--background-page);
   padding-top: 75px;
@@ -560,8 +555,8 @@ a.clients-logo:active {
 }
 
 .map {
-  padding-bottom: 5px;
-  margin-top: 7px;
+  padding-bottom: 6px;
+  margin-top: 6px;
   position: relative;
   padding: 0;
 }
@@ -578,10 +573,36 @@ a.clients-logo:active {
 
 .footer-form {
   position: absolute;
-  top: 46px;
+  top: 53px;
   left: 180px;
   background-color: white;
-  padding: 49px 39px 47px 50px;
+  padding: 45px 51px 47px 50px;
+}
+
+.adress-title {
+  margin-top: 5px;
+  margin-left: 0px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.adress-contacts {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  padding-top: 3px;
+}
+
+.adress-phone,
+.contacts-phone {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
+  padding-top: 4px;
 }
 
 /* Contacts*/
@@ -611,12 +632,9 @@ a.clients-logo:active {
   width: 261px;
 }
 
-.contacts-phone {
-  color: var(--text-contacts);
-}
-
 .contacts-button {
   padding: 17px 44px 15px 44px;
+  margin-top: 19px;
 }
 
 .contacts-button:hover {
@@ -654,6 +672,7 @@ a.clients-logo:active {
   line-height: 24px;
   font-weight: 400;
   padding-left: 10px;
+  padding-bottom: 54px;
 }
 
 .footer-title {
@@ -662,12 +681,17 @@ a.clients-logo:active {
   font-weight: 500;
   padding: 0;
   padding-left: 3px;
+  padding-top: 24px;
   margin: 0;
-  margin-bottom: 33px;
 }
 
 .footer-sale {
   margin: 0;
+  padding-left: 3px;
+}
+
+.footer-p {
+  line-height: 1.5;
 }
 
 /* Page-2: Catalog */
@@ -1126,16 +1150,23 @@ a.sort-item-button:active {
 /* Modal */
 
 .modal {
-  position: fixed;
-  width: 960px;
-  height: 590px;
-  top: 50px;
-  left: 480px;
-  background-color: #fff;
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  padding-left: 101px;
-  color: var(--color-text-basic);
   display: none;
+
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  max-width: 960px;
+  height: 590px;
+
+  margin: auto;
+  padding: 63px 100px 84px 100px;
+  background-color: white;
+  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .modal-show {
@@ -1151,6 +1182,7 @@ a.sort-item-button:active {
   font-weight: 700;
   font-size: 45px;
   line-height: 53px;
+  margin: 0;
 }
 
 .modal-p {
@@ -1162,6 +1194,9 @@ a.sort-item-button:active {
 .modal-button {
   padding: 17px 83px 15px 83px;
   align-items: center;
+  width: 259px;
+  height: 50px;
+  margin-top: -7px;
 }
 
 .modal-button:hover {
@@ -1174,8 +1209,8 @@ a.sort-item-button:active {
 
 .modal-close {
   position: absolute;
-  top: 80px;
-  right: 195px;
+  top: 78px;
+  right: 91px;
   width: 21px;
   height: 21px;
   background-image: url("../img/modal-close.svg");
@@ -1206,8 +1241,14 @@ a.sort-item-button:active {
 }
 
 #text {
-  width: 760px;
+  width: 100%;
   height: 118px;
+  padding-left: 15px;
+  padding-top: 14px;
+}
+
+.appointment-item {
+  margin: 0;
 }
 
 .appointment-item input:hover,
@@ -1227,23 +1268,27 @@ a.sort-item-button:active {
 }
 
 .appointment-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 360px 360px;
+  column-gap: 40px;
+  row-gap: 34px;
 }
 
-.appointment-form textarea {
-  padding-left: 15px;
-  padding-top: 10px;
+.appointment-form-textarea {
+  grid-column: 1 / 3;
+  margin-bottom: 13px;
+  margin-top: -37px;
+}
+
+.appointment-form-textarea textarea {
+  box-sizing: border-box;
+  resize: none;
 }
 
 .appointment-item label {
   display: block;
   margin-bottom: 9px;
-}
-
-p.appointment-item:nth-child(2) {
-  margin-right: 200px;
+  margin-top: 37px;
 }
 
 .appointment-form input {

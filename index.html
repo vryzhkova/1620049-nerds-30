@@ -49,9 +49,9 @@
       <h1 class="hidden">Интернет магазин «Nerds»</h1>
       <section class="features">
         <h2 class="hidden">Преимущества</h2>
-        <div class="container features-slides">
+        <div class="container">
           <div class="features slide1">
-            <div class="block1-slide">
+            <div>
               <p class="feature-item">
                 Долго, дорого,<br />
                 скрупулезно.
@@ -69,13 +69,6 @@
               height="430"
               alt="Слайд первый - телефоны"
             />
-            <!-- <img
-              class="swiper-slider"
-              src="img/swiper.svg"
-              width="88"
-              height="18"
-              alt="Переключтель слайдов"
-            /> -->
           </div>
           <div class="features slide2">
             <p class="feature-item">
@@ -178,7 +171,7 @@
       <hr />
       <section class="container about-us">
         <h2 class="hidden">О нас</h2>
-        <div class="about-us-description">
+        <div>
           <p class="about-us-title">
             Мы &#8212; маленькая, но гордая<br />
             дизайн-студия из Краснодара.
@@ -235,70 +228,42 @@
       </section>
       <hr />
 
-      <section class="container clients">
+      <section class="container">
         <h2 class="hidden">Наши клиенты</h2>
         <ul class="clients-list">
           <li class="clients-items">
-            <a href="#" class="clients-logo"
+            <a href="#" class="clients-logo logo-htmlacademy"
               ><img
-                class="clients-item logo-htmlacademy"
                 src="img/clients/logohtmlacademy.svg"
                 width="199"
                 height="68"
                 alt="Клиент «HTMLacademy»"
             /></a>
-            <!-- <img
-              class="line"
-              src="img/line.png"
-              width="2"
-              height="68"
-              alt="Клиент «HTMLacademy»"
-            /> -->
           </li>
-
           <li class="clients-items">
-            <a href="#" class="clients-logo"
+            <a href="#" class="clients-logo logo-barber"
               ><img
-                class="clients-item logo-barber"
                 src="img/clients/logoborodinski.svg"
-                width="200"
-                height="68"
+                width="209"
+                height="90"
                 alt="Клиент «Барбершоп Бородинский»"
             /></a>
-            <!-- <img
-              class="line"
-              src="img/line.png"
-              width="2"
-              height="68"
-              alt="Клиент «HTMLacademy»"
-            /> -->
           </li>
-
           <li class="clients-items">
-            <a href="#" class="clients-logo"
+            <a href="#" class="clients-logo logo-pink"
               ><img
-                class="clients-item logo-pink"
                 src="img/clients/logopink.svg"
-                width="200"
-                height="68"
+                width="185"
+                height="52"
                 alt="Клиент «Pink»"
             /></a>
-            <!-- <img
-              class="line"
-              src="img/line.png"
-              width="2"
-              height="68"
-              alt="Клиент «HTMLacademy»"
-            /> -->
           </li>
-
           <li class="clients-items">
-            <a href="#" class="clients-logo"
+            <a href="#" class="clients-logo logo-mishka"
               ><img
-                class="clients-item logo-mishka"
                 src="img/clients/logomiska.svg"
-                width="200"
-                height="68"
+                width="173"
+                height="84"
                 alt="Клиент «Mishka»"
             /></a>
           </li>
@@ -344,8 +309,8 @@
       </section>
       <div class="footer container">
         <ul class="contacts-list">
-          <li class="contacts-item">
-            <a class="social-button button-vk" href="#" aria-label="Вконтакте"
+          <li>
+            <a class="social-button" href="#" aria-label="Вконтакте"
               ><svg
                 aria-hidden="true"
                 focusable="false"
@@ -362,8 +327,8 @@
               </svg>
             </a>
           </li>
-          <li class="contacts-item">
-            <a class="social-button button-fb" href="#" aria-label="Фейсбук"
+          <li>
+            <a class="social-button" href="#" aria-label="Фейсбук"
               ><svg
                 aria-hidden="true"
                 focusable="false"
@@ -380,11 +345,8 @@
               </svg>
             </a>
           </li>
-          <li class="contacts-item">
-            <a
-              class="social-button button-inst"
-              href="#"
-              aria-label="Инстаграмм"
+          <li>
+            <a class="social-button" href="#" aria-label="Инстаграмм"
               ><svg
                 aria-hidden="true"
                 focusable="false"
@@ -406,8 +368,10 @@
         </ul>
 
         <div class="footer-text">
-          <p class="footer-title">Давайте дружить, это выгодно!</p>
-          <p class="footer-sale">Скидка 10% для друзей из социальных сетей.</p>
+          <p class="footer-p footer-title">Давайте дружить, это выгодно!</p>
+          <p class="footer-p footer-sale">
+            Скидка 10% для друзей из социальных сетей.
+          </p>
         </div>
       </div>
     </footer>
@@ -421,7 +385,7 @@
         action="https://echo.htmlacademy.ru"
         method="post"
       >
-        <p class="appointment-item">
+        <div class="appointment-item">
           <label class="modal-p" for="name">Ваше имя:</label>
           <input
             id="name"
@@ -430,8 +394,8 @@
             placeholder="Имя Фамилия"
             required
           />
-        </p>
-        <p class="appointment-item">
+        </div>
+        <div class="appointment-item">
           <label class="modal-p" for="email">Ваш email:</label>
           <input
             id="email"
@@ -440,15 +404,15 @@
             placeholder="email@example.com"
             required
           />
-        </p>
-        <p class="appointment-item">
+        </div>
+        <div class="appointment-item appointment-form-textarea">
           <label class="modal-p" for="text">Текст письма:</label>
           <textarea
             id="text"
             name="text"
             placeholder="В свободной форме"
           ></textarea>
-        </p>
+        </div>
         <button class="button modal-button" type="submit">Отправить</button>
       </form>
     </section>

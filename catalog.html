@@ -70,7 +70,7 @@
                   ></div>
                 </div>
                 <div class="price-controls">
-                  <label class="min-price">
+                  <label>
                     от <input type="text" name="min-price" value="0" />
                   </label>
                   <label class="max-price">
@@ -83,22 +83,20 @@
             <fieldset>
               <legend>Сетка:</legend>
               <ul>
-                <li class="filter-option filter-radio">
+                <li class="filter-option">
                   <input
-                    class="hidden filter-input-radio filter-input"
+                    class="hidden filter-input-radio"
                     type="radio"
                     name="grid-group"
                     value="adaptive"
                     id="filter-adaptive"
                     checked
                   />
-                  <label class="filter-adaptive" for="filter-adaptive"
-                    >Адаптивная</label
-                  >
+                  <label for="filter-adaptive">Адаптивная</label>
                 </li>
-                <li class="filter-option filter-radio">
+                <li class="filter-option">
                   <input
-                    class="hidden filter-input-radio filter-input"
+                    class="hidden filter-input-radio"
                     type="radio"
                     name="grid-group"
                     value="fixed"
@@ -106,9 +104,9 @@
                   />
                   <label for="filter-fixed">Фиксированная</label>
                 </li>
-                <li class="filter-option filter-radio">
+                <li class="filter-option">
                   <input
-                    class="hidden filter-input-radio filter-input"
+                    class="hidden filter-input-radio"
                     type="radio"
                     name="grid-group"
                     value="rubber"
@@ -122,9 +120,9 @@
             <fieldset>
               <legend>Особенности:</legend>
               <ul>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-option">
                   <input
-                    class="hidden filter-input-checkbox filter-input"
+                    class="hidden filter-input-checkbox"
                     type="checkbox"
                     name="slider"
                     id="filter-slider"
@@ -132,18 +130,18 @@
                   />
                   <label for="filter-slider">Слайдер</label>
                 </li>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-option">
                   <input
-                    class="hidden filter-input-checkbox filter-input"
+                    class="hidden filter-input-checkbox"
                     type="checkbox"
                     name="advantages"
                     id="filter-advantages"
                   />
                   <label for="filter-advantages">Блок преимущества</label>
                 </li>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-option">
                   <input
-                    class="hidden filter-input-checkbox filter-input"
+                    class="hidden filter-input-checkbox"
                     type="checkbox"
                     name="news"
                     id="filter-news"
@@ -151,18 +149,18 @@
                   />
                   <label for="filter-news">Новости</label>
                 </li>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-option">
                   <input
-                    class="hidden filter-input-checkbox filter-input"
+                    class="hidden filter-input-checkbox"
                     type="checkbox"
                     name="gallery"
                     id="filter-gallery"
                   />
                   <label for="filter-gallery">Галерея</label>
                 </li>
-                <li class="filter-option filter-checkbox">
+                <li class="filter-option">
                   <input
-                    class="hidden filter-input-checkbox filter-input"
+                    class="hidden filter-input-checkbox"
                     type="checkbox"
                     name="basket"
                     id="filter-basket"
@@ -194,6 +192,7 @@
             </a>
             <a class="sort-item-button" href="#">
               <svg
+                class="button-top"
                 width="11"
                 height="10"
                 viewBox="0 0 11 10"
@@ -209,7 +208,7 @@
             <ul class="catalog-list">
               <li class="catalog-items">
                 <a href="blank.html">
-                  <h3 class="hidden">Sedona</h3>
+                  <h3 class="hidden">SEDONA</h3>
                   <p class="catalog-images">
                     <img
                       class="browser-image"
@@ -219,16 +218,15 @@
                       alt="Браузер"
                     />
                     <img
-                      class="catalog-image sedona"
                       src="img/catalog/Sedona.jpg"
-                      width="358"
+                      width="359"
                       height="578"
                       alt="Седона"
                     />
                   </p>
                 </a>
                 <div class="form-about">
-                  <p class="form-title">Sedona</p>
+                  <p class="form-title">SEDONA</p>
                   <p class="form-text">
                     Информационный сайт<br />
                     для туристов
@@ -250,9 +248,8 @@
                       alt="Браузер"
                     />
                     <img
-                      class="catalog-image pink"
                       src="img/catalog/Pink.jpg"
-                      width="360"
+                      width="359"
                       height="578"
                       alt="Пинк"
                     />
@@ -281,9 +278,8 @@
                       alt="Браузер"
                     />
                     <img
-                      class="catalog-image barber"
                       src="img/catalog/Barbershop.jpg"
-                      width="360"
+                      width="359"
                       height="578"
                       alt="«Барбершоп"
                     />
@@ -312,9 +308,8 @@
                       alt="Браузер"
                     />
                     <img
-                      class="catalog-image Mishka"
                       src="img/catalog/Mishka.jpg"
-                      width="360"
+                      width="359"
                       height="578"
                       alt="«Мишка"
                     />
@@ -343,9 +338,8 @@
                       alt="Браузер"
                     />
                     <img
-                      class="catalog-image Aplus"
                       src="img/catalog/Aplus.jpg"
-                      width="360"
+                      width="359"
                       height="578"
                       alt="«А-плюс"
                     />
@@ -374,9 +368,8 @@
                       alt="Браузер"
                     />
                     <img
-                      class="catalog-image Kvast"
                       src="img/catalog/Kvast.jpg"
-                      width="360"
+                      width="359"
                       height="578"
                       alt="«Кваст"
                     />
@@ -405,9 +398,7 @@
                 <a href="#" class="pagination-items">3</a>
               </li>
               <li class="pagination-item">
-                <a href="#" class="pagination-items pagination-items-next"
-                  >Следующая</a
-                >
+                <a href="#" class="pagination-items">Следующая</a>
               </li>
             </ul>
           </section>
@@ -416,7 +407,7 @@
     </main>
 
     <footer class="main-footer">
-      <section class="map">
+      <section class="map catalog-map">
         <h2 class="hidden">Карта</h2>
         <iframe
           class="map-image"
@@ -438,7 +429,7 @@
           <p class="adress-title">NЁRDS DESIGN STUDIO</p>
           <p class="adress-contacts">
             191186, Санкт-Петербург,<br />
-            ул. Б. Конюшенная, д. 19
+            ул. Б. Конюшенная, д. 19/8
           </p>
           <p class="adress-phone">
             тел.
@@ -532,6 +523,7 @@
         <div class="appointment-item">
           <label class="modal-p" for="name">Ваше имя:</label>
           <input
+            class="modal-input-name"
             id="name"
             type="text"
             name="name"
@@ -542,6 +534,7 @@
         <div class="appointment-item">
           <label class="modal-p" for="email">Ваш email:</label>
           <input
+            class="modal-input-email"
             id="email"
             type="email"
             name="email"
@@ -552,6 +545,7 @@
         <div class="appointment-item appointment-form-textarea">
           <label class="modal-p" for="text">Текст письма:</label>
           <textarea
+            class="modal-input-text"
             id="text"
             name="text"
             placeholder="В свободной форме"

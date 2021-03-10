@@ -241,6 +241,7 @@ a.basket:active {
 .benefits-item {
   margin-bottom: 53px;
   font-weight: 400;
+  /* overflow-x: hidden; */
 }
 
 .features.slide2,
@@ -352,7 +353,7 @@ a.more:active {
   color: rgba(255, 255, 255, 0.3);
 }
 
-hr {
+.hr-line {
   display: block;
   unicode-bidi: isolate;
   width: 1158px;
@@ -547,6 +548,10 @@ a.clients-logo:active {
   min-height: 630px;
 }
 
+.catalog-footer {
+  padding-top: 51px;
+}
+
 .footer {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -576,7 +581,13 @@ a.clients-logo:active {
   top: 53px;
   left: 140px;
   background-color: white;
-  padding: 45px 51px 47px 50px;
+  width: 219px;
+  max-height: 206px;
+  padding-left: 50px;
+  padding-top: 44px;
+  padding-right: 50px;
+  padding-bottom: 58px;
+  overflow: auto;
 }
 
 .adress-title {
@@ -593,7 +604,7 @@ a.clients-logo:active {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
-  padding-top: 3px;
+  padding-top: 4px;
 }
 
 .adress-phone,
@@ -602,7 +613,8 @@ a.clients-logo:active {
   font-size: 16px;
   line-height: 18px;
   color: #666666;
-  padding-top: 4px;
+  padding-top: 3px;
+  padding-bottom: 35px;
 }
 
 /* Contacts*/
@@ -651,6 +663,7 @@ a.clients-logo:active {
   height: 81px;
   text-align: center;
   display: inline-block;
+  vertical-align: baseline;
   font-size: 16px;
   border-radius: 50%;
   background: linear-gradient(0deg, #e1e1e1, #e1e1e1), #ffffff;
@@ -925,6 +938,16 @@ a.clients-logo:active {
   color: var(--color-text-basic);
 }
 
+.filter-input-checkbox:disabled + label,
+.filter-input-radio:disabled + label {
+  opacity: 0.3;
+}
+
+.filter-input-checkbox:disabled + label::before,
+.filter-input-radio:disabled + label::before {
+  opacity: 0.3;
+}
+
 .filters fieldset {
   padding: 0;
   margin: 0;
@@ -962,7 +985,6 @@ a.clients-logo:active {
 }
 
 /* Sort */
-
 .page-catalog .sort {
   display: flex;
   justify-content: start;
@@ -975,7 +997,8 @@ a.clients-logo:active {
 .sort-title {
   color: var(--color-text-basic);
   padding-right: 240px;
-  padding-bottom: 3px;
+  padding-bottom: 44px;
+
   text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
@@ -1033,7 +1056,7 @@ a.sort-item-button:active {
   padding: 0;
   padding-left: 140px;
   margin: 0;
-  margin-bottom: 23px;
+  margin-bottom: -17px;
   list-style: none;
 }
 
@@ -1051,17 +1074,32 @@ a.sort-item-button:active {
 .catalog-images {
   margin: 0;
   margin-right: -8px;
+  position: relative;
 }
 
-.browser-image {
+/* .browser-image {
   opacity: 0.12;
   margin: 0;
   margin-bottom: -5px;
   padding: 0;
+} */
+
+.catalog-images::before {
+  content: "";
+  position: absolute;
+  top: -41px;
+  left: -1px;
+  width: 360px;
+  height: 40px;
+  background-image: url("../img/browser.svg");
+  opacity: 0.12;
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
-.catalog-items:hover .browser-image {
+.catalog-items:hover .catalog-images::before {
   opacity: 1;
+  box-shadow: (0px 6px 15px rgba(0, 0, 0, 0.25));
 }
 
 .form-button:hover {
@@ -1076,13 +1114,15 @@ a.sort-item-button:active {
 
 .form-about {
   background-color: #eeeeee;
-  width: 360px;
-  height: 231px;
+  width: 103%;
+  max-height: 231px;
+  padding-bottom: 40px;
   position: relative;
-  top: -238px;
-  left: 0px;
+  top: -240px;
+  left: -1px;
   text-align: center;
   display: none;
+  overflow: auto;
 }
 
 .catalog-items:hover .form-about {
@@ -1097,6 +1137,15 @@ a.sort-item-button:active {
   padding-left: 0px;
   padding-bottom: 12px;
   margin: 0;
+}
+
+.form-title:hover {
+  color: #fb565a;
+}
+
+.form-title:focus,
+.form-title:active {
+  opacity: 0.3;
 }
 
 .form-text {
@@ -1174,7 +1223,7 @@ a.pagination-items:active {
   box-sizing: border-box;
   position: fixed;
   top: 0;
-  right: 0;
+  right: 38px;
   bottom: 0;
   left: 40px;
   max-width: 960px;
@@ -1213,7 +1262,7 @@ a.pagination-items:active {
   align-items: center;
   width: 259px;
   height: 50px;
-  margin-top: -7px;
+  margin-top: -10px;
 }
 
 .modal-button:hover {
@@ -1309,7 +1358,7 @@ a.pagination-items:active {
 }
 
 .appointment-form input {
-  padding-left: 16px;
+  padding-left: 13px;
   border: 2px solid #d7dcde;
   box-sizing: border-box;
 }

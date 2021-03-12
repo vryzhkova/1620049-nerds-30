@@ -136,7 +136,7 @@ a.main-header-logo:active {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 45px;
+  padding-top: 48px;
 }
 
 .site-navigation {
@@ -728,7 +728,7 @@ a.clients-logo:active {
 
 .page-title {
   margin: 0;
-  padding-bottom: 114px;
+  padding-bottom: 110px;
   padding-top: 68px;
   font-size: 55px;
   line-height: 55px;
@@ -919,7 +919,7 @@ a.clients-logo:active {
   font-size: 18px;
   line-height: 30px;
   color: var(--color-text-basic);
-  margin-bottom: -1px;
+  margin-bottom: -2px;
   text-transform: uppercase;
 }
 
@@ -952,9 +952,9 @@ a.clients-logo:active {
 .filters fieldset {
   padding: 0;
   margin: 0;
-  margin-top: 9px;
+  margin-top: 11px;
   margin-left: -9px;
-  margin-bottom: 25px;
+  margin-bottom: 28px;
   border: none;
 }
 
@@ -969,7 +969,7 @@ a.clients-logo:active {
   color: var(--color-text-basic);
   padding: 0;
   margin: 0;
-  margin-top: 3px;
+  margin-top: -3px;
   margin-left: -10px;
 }
 
@@ -1223,7 +1223,7 @@ a.pagination-items:active {
   color: var(--color-text-basic);
   box-sizing: border-box;
   position: fixed;
-  top: 0;
+  top: -4px;
   right: 38px;
   bottom: 0;
   left: 40px;

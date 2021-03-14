@@ -28,7 +28,7 @@
 
 :root {
   --background-header: #eeeeee;
-  --background-page: #ffffff;
+  --background-color: #ffffff;
   --background-button: #fb565a;
   --background-button-hover: #e74246;
   --background-button-click: #d7373b;
@@ -41,6 +41,10 @@
   --pagination-button: #eeeeee;
   --pagination-button-hover: #dfdfdf;
   --pagination-button-click: #d5d5d5;
+  --background-range: #f1f1f1;
+  --background-color-toggle: #ababab;
+  --color-input-price-controls: #283136;
+  --button-filter-active: rgba(0, 0, 0, 0.3);
 }
 
 /* Text */
@@ -49,6 +53,7 @@
   --nav-hover-color: #fb565a;
   --color-button-text: #ffffff;
   --text-contacts: #666666;
+  --text-active: rgba(255, 255, 255, 0.3);
 }
 
 /* Global */
@@ -65,7 +70,7 @@
   line-height: 24px;
   font-weight: 500;
   color: var(--color-text-basic);
-  background-color: var(--background-page);
+  background-color: var(--background-color);
   background-position: top center;
   background-repeat: no-repeat;
   min-height: 100%;
@@ -85,15 +90,16 @@
   background-color: var(--background-button);
   border: none;
   border-radius: 3px;
-  outline: none;
+  white-space: nowrap;
+  /* outline: none; */
 }
 
 .inner-page .main-header {
-  background-color: var(--background-page);
+  background-color: var(--background-color);
 }
 
 .inner-page {
-  color: var(--background-page);
+  color: var(--background-color);
 }
 
 a {
@@ -218,6 +224,7 @@ a.basket:active {
 .features {
   background-color: var(--background-header);
   margin-bottom: 70px;
+  position: relative;
 }
 
 .feature-item {
@@ -226,6 +233,10 @@ a.basket:active {
   margin-top: 68px;
   margin-bottom: 27px;
   margin-left: -2px;
+  max-height: 111px;
+  max-width: 538px;
+  overflow: auto;
+  white-space: nowrap
 }
 
 .slide1-image {
@@ -241,6 +252,9 @@ a.basket:active {
 .benefits-item {
   margin-bottom: 53px;
   font-weight: 400;
+  max-height: 49px;
+  max-width: 400px;
+  overflow: auto;
   /* overflow-x: hidden; */
 }
 
@@ -251,6 +265,7 @@ a.basket:active {
 
 a.more {
   padding: 17px 54px 15px 54px;
+  white-space: nowrap;
 }
 
 a.more:hover {
@@ -260,7 +275,33 @@ a.more:hover {
 a.more:active {
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-active);
+}
+
+.slider-controls {
+  position: absolute;
+  bottom: 96px;
+    left: 47%;
+  z-index: 10;
+  display: flex;
+  width: 88px;
+  justify-content: space-between;
+}
+
+.slider-controls button {
+  width: 18px;
+  height: 18px;
+  background-color: var(--color-button-text);
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.slider-controls .current {
+  box-shadow: 
+  inset 0 0 0 5px #FFFFFF,
+  inset 0 0 0 7px #C1C1C1;
 }
 
 /* Services*/
@@ -322,7 +363,7 @@ a.more:active {
 .button-website:active {
   background: #d7373b;
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-active);
 }
 
 .button-application {
@@ -336,7 +377,7 @@ a.more:active {
 .button-application:active {
   background: var(--button-green-click);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-active);
 }
 
 .button-presentation {
@@ -350,7 +391,7 @@ a.more:active {
 .button-presentation:active {
   background: var(--button-yellow-click);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-active);
 }
 
 .hr-line {
@@ -390,6 +431,9 @@ a.more:active {
   list-style: none;
   font-weight: 400;
   padding-left: 35px;
+  max-height: 120px;
+  max-width: 399px;
+  overflow: auto;
 }
 
 .about-us-item:not(:last-child) {
@@ -398,6 +442,7 @@ a.more:active {
 
 .about-us-item {
   position: relative;
+  
 }
 
 .about-us-item:before {
@@ -494,13 +539,13 @@ p.about-us-content {
 }
 
 .logo-pink {
-  padding-top: 6px;
-  padding-left: 6px;
+  padding-top: 7px;
+  padding-left: 7px;
 }
 
 .logo-mishka {
-  padding-top: 9px;
-  padding-left: 10px;
+  padding-top: 10px;
+  padding-left: 16px;
 }
 
 .clients-items {
@@ -520,11 +565,11 @@ p.about-us-content {
 .clients-items:not(:last-child):after {
   position: absolute;
   top: 64px;
-  left: 278px;
+  left: 283px;
   width: 2px;
   height: 52px;
   content: "";
-  background-color: #eeeeee;
+  background-color: var(--background-header);
 }
 
 a.clients-logo {
@@ -542,7 +587,7 @@ a.clients-logo:active {
 /* Main-Footer */
 
 .main-footer {
-  background-color: var(--background-page);
+  background-color: var(--background-color);
   padding-top: 75px;
   color: var(--color-text-basic);
   min-height: 630px;
@@ -566,21 +611,33 @@ a.clients-logo:active {
   padding: 0;
 }
 
+.map-frame {
+  min-width: 100%;
+  position: relative;
+    z-index: 2;
+}
+
 .map-image {
   min-width: 100%;
+  max-height: 416px;
+position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
 
 .map-marker-image {
   position: absolute;
   top: 16px;
   left: 709px;
+  z-index: 2;
 }
 
 .footer-form {
   position: absolute;
   top: 53px;
   left: 140px;
-  background-color: white;
+  background-color: var(--background-color);
   width: 219px;
   max-height: 207px;
   padding-left: 50px;
@@ -588,6 +645,7 @@ a.clients-logo:active {
   padding-right: 50px;
   padding-bottom: 58px;
   overflow: auto;
+  z-index: 2;
 }
 
 .adress-title {
@@ -603,7 +661,7 @@ a.clients-logo:active {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #666666;
+  color: var(--text-contacts);
   padding-top: 5px;
 }
 
@@ -612,7 +670,7 @@ a.clients-logo:active {
   font-weight: 400;
   font-size: 16px;
   line-height: 18px;
-  color: #666666;
+  color: var(--text-contacts);
   padding-top: 3px;
   padding-bottom: 35px;
 }
@@ -656,7 +714,7 @@ a.clients-logo:active {
 
 .contacts-button:active {
   background-color: var(--background-button-click);
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-active);
 }
 
 .social-button {
@@ -776,7 +834,7 @@ a.clients-logo:active {
   padding-top: 41px;
   padding-right: 20px;
   padding-left: 20px;
-  background-color: #f1f1f1;
+  background-color: var(--background-range);
   border-radius: 5px;
 }
 
@@ -796,7 +854,7 @@ a.clients-logo:active {
   height: 4px;
   padding: 0;
   border: 8px solid #ffffff;
-  background-color: #ababab;
+  background-color: var(--background-color-toggle);
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
   position: absolute;
@@ -830,10 +888,10 @@ a.clients-logo:active {
   padding: 9px;
   margin-left: 10px;
   text-align: center;
-  color: #283136;
+  color: var(--color-input-price-controls);
   border: none;
   border-radius: 5px;
-  background: #f1f1f1;
+  background: var(--background-range);
   font-family: inherit;
   font-size: inherit;
 }
@@ -982,7 +1040,7 @@ a.clients-logo:active {
   background-color: var(--pagination-button-click);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
   border-radius: 3px;
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--button-filter-active);
 }
 
 /* Sort */
@@ -1114,12 +1172,12 @@ a.sort-item-button:active {
 /* Form */
 
 .form-about {
-  background-color: #eeeeee;
+  background-color: var(--background-color);
   width: 103%;
-  max-height: 195px;
-  padding-bottom: 40px;
+  max-height: 179px;
+  padding-bottom: 53px;
   position: relative;
-  top: -240px;
+  top: -234px;
   left: -1px;
   text-align: center;
   display: none;
@@ -1134,14 +1192,14 @@ a.sort-item-button:active {
   color: var(--color-text-basic);
   font-size: 18px;
   line-height: 30px;
-  padding-top: 29px;
+  padding-top: 26px;
   padding-left: 0px;
   padding-bottom: 12px;
   margin: 0;
 }
 
 .form-title:hover {
-  color: #fb565a;
+  color: var(--background-button);
 }
 
 .form-title:focus,
@@ -1154,7 +1212,7 @@ a.sort-item-button:active {
   line-height: 18px;
   font-weight: 400;
   color: var(--text-contacts);
-  padding-bottom: 31px;
+  padding-bottom: 46px;
   padding-right: 8px;
   margin: 0;
 }
@@ -1186,19 +1244,19 @@ a.sort-item-button:active {
 
 .pagination-items-active {
   box-shadow: inset 0px 0px 0px 3px #dbdbdb;
-  background-color: white;
+  background-color: var(--background-color);
 }
 
 .pagination-item {
   margin-right: 11px;
 }
 
-.pagination-item:last-child {
+.pagination-item-next {
   margin-right: 0;
   width: 250px;
   text-align: center;
   text-transform: uppercase;
-  padding-right: 3px;
+  padding-right: 11px;
 }
 
 a.pagination-items:hover {
@@ -1209,7 +1267,7 @@ a.pagination-items:focus,
 a.pagination-items:active {
   background: var(--pagination-button-click);
   box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
-  color: rgba(0, 0, 0, 0.3);
+  color: var(--button-filter-active);
 }
 
 .catalog-map {
@@ -1231,9 +1289,9 @@ a.pagination-items:active {
   height: 590px;
   margin: auto;
   padding: 63px 100px 84px 100px;
-  background-color: white;
+  background-color: var(--background-color);
   box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
-  z-index: 1;
+  z-index: 2;
 }
 
 .modal-show {
@@ -1271,7 +1329,7 @@ a.pagination-items:active {
 }
 
 .modal-button:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-active);
 }
 
 .modal-close {
@@ -1284,7 +1342,7 @@ a.pagination-items:active {
   background-repeat: no-repeat;
   background-position: 0 0;
   border: none;
-  background-color: white;
+  background-color: var(--background-color);
   cursor: pointer;
   opacity: 0.3;
 }
@@ -1330,7 +1388,7 @@ a.pagination-items:active {
 }
 
 .appointment-item input:invalid {
-  color: #e74246;
+  color: var(--background-button-hover);
   border: 2px solid #e74246;
 }
 

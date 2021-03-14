@@ -148,18 +148,19 @@ a.main-header-logo:active {
 .site-navigation {
   list-style: none;
   margin: 0 auto;
+  padding: 0;
   padding-top: 8px;
-  padding-right: 86px;
+  padding-left: 30px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 435px;
+  justify-content: flex-start;
+  width: 510px;
   color: var(--color-text-basic);
   text-transform: uppercase;
 }
 
 .site-navigation-item:not(:last-child) {
-  margin-right: 5px;
+  margin-right: 44px;
 }
 
 .site-navigation-item-active {

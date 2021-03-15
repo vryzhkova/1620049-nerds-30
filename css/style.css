@@ -234,10 +234,10 @@ a.basket:active {
   margin-top: 68px;
   margin-bottom: 27px;
   margin-left: -2px;
-  max-height: 111px;
-  max-width: 538px;
-  overflow: auto;
-  white-space: nowrap
+  /* max-height: 111px; */
+  max-width: 500px;
+  /* overflow: auto; */
+  /* white-space: nowrap */
 }
 
 .slide1-image {

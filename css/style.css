@@ -978,7 +978,7 @@ position: absolute;
   font-size: 18px;
   line-height: 30px;
   color: var(--color-text-basic);
-  margin-bottom: -2px;
+  margin-bottom: -1px;
   text-transform: uppercase;
 }
 
@@ -1137,13 +1137,6 @@ a.sort-item-button:active {
   position: relative;
 }
 
-/* .browser-image {
-  opacity: 0.12;
-  margin: 0;
-  margin-bottom: -5px;
-  padding: 0;
-} */
-
 .catalog-images::before {
   content: "";
   position: absolute;
@@ -1272,7 +1265,7 @@ a.pagination-items:active {
 }
 
 .catalog-map {
-  margin-top: -17px;
+  margin-top: -15px;
 }
 
 /* Modal */

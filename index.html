@@ -3,10 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/normalize.min.css" rel="stylesheet" />
-    <link href="css/style.min.css" rel="stylesheet" />
-    <link rel="icon" href="favicon.icon" />
-    <link rel="icon" href="favicon/icon.svg" type="image/svg" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" href="favicon.icon" type="image/svg" />
     <link rel="apple-touch-icon" href="favicon/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
   </head>
@@ -50,7 +49,7 @@
       <section class="features">
         <h2 class="hidden">Преимущества</h2>
         <div class="container">
-          <div class="features slide1">
+          <div class="slide slide-active">
             <div>
               <p class="feature-item">
                 Долго, дорого,<br />
@@ -64,43 +63,47 @@
             </div>
             <img
               class="slide1-image"
-              src="img/slider/nerds-slide1.jpg"
+              src="img/slider/nerds-slide1.png"
               width="760"
-              height="430"
+              height="431"
               alt="Слайд первый - телефоны"
             />
           </div>
-          <div class="features slide2">
-            <p class="feature-item">
-              Любим математику <br />
-              как никто другой
-            </p>
-            <p class="benefits-item">
-              Никакого креатива, только математические формулы <br />
-              для расчета идеальных пропорций
-            </p>
-            <a class="button more" href="blank.html">Узнать больше</a>
+          <div class="slide">
+            <div>
+              <p class="feature-item">
+                Любим математику <br />
+                как никто другой
+              </p>
+              <p class="benefits-item">
+                Никакого креатива, только математические формулы <br />
+                для расчета идеальных пропорций
+              </p>
+              <a class="button more" href="blank.html">Узнать больше</a>
+            </div>
             <img
-              src="img/slider/nerds-slide2.jpg"
+              src="img/slider/nerds-slide2.png"
               width="760"
-              height="430"
+              height="431"
               alt="Слайд второй - мониторы"
             />
           </div>
-          <div class="features slide3">
-            <p class="feature-item">
-              Только ночь,<br />
-              только хардкор
-            </p>
-            <p class="benefits-item">
-              Работать днем, как все? Мы против этого.<br />
-              Ближе к полуночи работа только начинается.
-            </p>
-            <a class="button more" href="blank.html">Узнать больше</a>
+          <div class="slide">
+            <div>
+              <p class="feature-item">
+                Только ночь,<br />
+                только хардкор
+              </p>
+              <p class="benefits-item">
+                Работать днем, как все? Мы против этого.<br />
+                Ближе к полуночи работа только начинается.
+              </p>
+              <a class="button more" href="blank.html">Узнать больше</a>
+            </div>
             <img
-              src="img/slider/nerds-slide3.jpg"
+              src="img/slider/nerds-slide3.png"
               width="760"
-              height="430"
+              height="431"
               alt="Слайд тертий - планшет и телефон"
             />
           </div>
@@ -252,7 +255,9 @@
         <h2 class="hidden">Наши клиенты</h2>
         <ul class="clients-list">
           <li class="clients-items">
-            <a href="#" class="clients-logo logo-htmlacademy"
+            <a
+              href="https://htmlacademy.ru/intensive/htmlcss"
+              class="clients-logo logo-htmlacademy"
               ><img
                 src="img/clients/logohtmlacademy.svg"
                 width="199"
@@ -263,7 +268,7 @@
           <li class="clients-items">
             <a href="#" class="clients-logo logo-barber"
               ><img
-                src="img/clients/logoborodinski.svg"
+                src="img/clients/logoborodinski.png"
                 width="209"
                 height="90"
                 alt="Клиент «Барбершоп Бородинский»"
@@ -272,7 +277,7 @@
           <li class="clients-items">
             <a href="#" class="clients-logo logo-pink"
               ><img
-                src="img/clients/logopink.svg"
+                src="img/clients/logopink.png"
                 width="185"
                 height="52"
                 alt="Клиент «Pink»"
@@ -281,7 +286,7 @@
           <li class="clients-items">
             <a href="#" class="clients-logo logo-mishka"
               ><img
-                src="img/clients/logomiska.svg"
+                src="img/clients/logomiska.png"
                 width="173"
                 height="84"
                 alt="Клиент «Mishka»"
@@ -305,31 +310,25 @@
         ></iframe>
         <img
           class="map-image"
-          src="img/footer/map.jpg"
-          width="1440"
+          src="img/footer/map.png"
           height="416"
           alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
         />
-        <img
-          class="map-marker-image"
-          src="img/footer/map-marker.png"
-          width="231"
-          height="190"
-          alt="Отметка на карте"
-        />
-        <div class="footer-form">
-          <p class="adress-title">NЁRDS DESIGN STUDIO</p>
-          <p class="adress-contacts">
-            191186, Санкт-Петербург,<br />
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="adress-phone">
-            тел.
-            <a class="contacts-phone" href="tel:+78126660266"
-              >+7 (812) 275-75-75</a
-            >
-          </p>
-          <a href="form.html" class="button contacts-button">Напишите нам</a>
+        <div class="container">
+          <div class="footer-form">
+            <p class="adress-title">NЁRDS DESIGN STUDIO</p>
+            <p class="adress-contacts">
+              191186, Санкт-Петербург,<br />
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p class="adress-phone">
+              тел.
+              <a class="contacts-phone" href="tel:+78126660266"
+                >+7 (812) 275-75-75</a
+              >
+            </p>
+            <a href="form.html" class="button contacts-button">Напишите нам</a>
+          </div>
         </div>
       </section>
       <div class="footer container">
@@ -418,7 +417,6 @@
             type="text"
             name="name"
             placeholder="Имя Фамилия"
-            required
           />
         </div>
         <div class="appointment-item">
@@ -429,7 +427,6 @@
             type="email"
             name="email"
             placeholder="email@example.com"
-            required
           />
         </div>
         <div class="appointment-item appointment-form-textarea">
@@ -446,10 +443,5 @@
     </section>
 
     <script src="js/modal.min.js"></script>
-    <script
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBKF7SqdcEhdD9OAADL7iIJODJT_swW_Ms&callback=initMap"
-      async
-      defer
-    ></script>
   </body>
 </html>

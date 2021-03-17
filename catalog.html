@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Нёрдс</title>
-    <link href="css/normalize.min.css" rel="stylesheet" />
-    <link href="css/style.min.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <link rel="icon" href="favicon.icon" />
   </head>
   <body class="page-body inner-page">
@@ -61,12 +61,14 @@
                   <div
                     class="toggle toggle-min"
                     tabindex="0"
-                    style="left: 5%"
+                    style="left: 7%"
+                    aria-label="Минимальная стоимость"
                   ></div>
                   <div
                     class="toggle toggle-max"
                     tabindex="0"
                     style="left: 61%"
+                    aria-label="Максимальная стоимость"
                   ></div>
                 </div>
                 <div class="price-controls">
@@ -74,7 +76,7 @@
                     от <input type="text" name="min-price" value="0" />
                   </label>
                   <label class="max-price">
-                    до <input type="text" name="max-price" value="15000" />
+                    до <input type="text" name="max-price" value="15 000" />
                   </label>
                 </div>
               </div>
@@ -176,11 +178,16 @@
           <section class="sort">
             <h2 class="hidden">Сортировка</h2>
             <p class="sort-title">Сортировать:</p>
-            <a class="sort-item" href="#">По цене</a>
+            <a class="sort-item sort-item-active" href="#">По цене</a>
             <a class="sort-item" href="#">По типу</a>
             <a class="sort-item" href="#">По названию</a>
-            <a class="sort-item-button" href="#">
+            <a
+              class="sort-item-button sort-item-active"
+              href="#"
+              aria-label="Сортировать по убыванию"
+            >
               <svg
+                class="sort-item-active"
                 width="11"
                 height="10"
                 viewBox="0 0 11 10"
@@ -190,7 +197,11 @@
                 <path d="M5.5 10L0 0H11" fill="#231F20" />
               </svg>
             </a>
-            <a class="sort-item-button" href="#">
+            <a
+              class="sort-item-button"
+              href="#"
+              aria-label="Сортировать по возрастанию"
+            >
               <svg
                 class="button-top"
                 width="11"
@@ -210,7 +221,7 @@
                 <h3 class="hidden">SEDONA</h3>
                 <p class="catalog-images">
                   <img
-                    src="img/catalog/Sedona.jpg"
+                    src="img/catalog/sedona.jpg"
                     width="359"
                     height="578"
                     alt="Седона"
@@ -218,9 +229,10 @@
                 </p>
 
                 <div class="form-about">
-                  <a href="blank.html"><p class="form-title">SEDONA</p></a>
+                  <a href="blank.html" class="form-title">SEDONA</a>
                   <p class="form-text">
                     Информационный сайт<br />
+                    для туристовИнформационный сайт<br />
                     для туристов
                   </p>
                   <a href="blank.html" class="button form-button"> 9 900 ₽ </a>
@@ -230,7 +242,7 @@
                 <h3 class="hidden">Pink</h3>
                 <p class="catalog-images">
                   <img
-                    src="img/catalog/Pink.jpg"
+                    src="img/catalog/pink.jpg"
                     width="359"
                     height="578"
                     alt="Пинк"
@@ -238,7 +250,7 @@
                 </p>
 
                 <div class="form-about">
-                  <a href="blank.html"><p class="form-title">Pink</p></a>
+                  <a href="blank.html" class="form-title">Pink</a>
                   <p class="form-text">
                     Информационный сайт<br />
                     для туристов
@@ -250,7 +262,7 @@
                 <h3 class="hidden">Barbershop</h3>
                 <p class="catalog-images">
                   <img
-                    src="img/catalog/Barbershop.jpg"
+                    src="img/catalog/barbershop.jpg"
                     width="359"
                     height="578"
                     alt="«Барбершоп"
@@ -258,7 +270,7 @@
                 </p>
 
                 <div class="form-about">
-                  <a href="blank.html"><p class="form-title">Barbershop</p></a>
+                  <a href="blank.html" class="form-title">Barbershop</a>
                   <p class="form-text">
                     Информационный сайт<br />
                     для туристов
@@ -270,7 +282,7 @@
                 <h3 class="hidden">Mishka</h3>
                 <p class="catalog-images">
                   <img
-                    src="img/catalog/Mishka.jpg"
+                    src="img/catalog/mishka.jpg"
                     width="359"
                     height="578"
                     alt="«Мишка"
@@ -278,7 +290,7 @@
                 </p>
 
                 <div class="form-about">
-                  <a href="blank.html"><p class="form-title">Mishka</p></a>
+                  <a href="blank.html" class="form-title">Mishka</a>
                   <p class="form-text">
                     Информационный сайт<br />
                     для туристов
@@ -290,7 +302,7 @@
                 <h3 class="hidden">Aplus</h3>
                 <p class="catalog-images">
                   <img
-                    src="img/catalog/Aplus.jpg"
+                    src="img/catalog/aplus.jpg"
                     width="359"
                     height="578"
                     alt="«А-плюс"
@@ -298,7 +310,7 @@
                 </p>
 
                 <div class="form-about">
-                  <a href="blank.html"><p class="form-title">Aplus</p></a>
+                  <a href="blank.html" class="form-title">Aplus</a>
                   <p class="form-text">
                     Информационный сайт<br />
                     для туристов
@@ -310,7 +322,7 @@
                 <h3 class="hidden">Kvast</h3>
                 <p class="catalog-images">
                   <img
-                    src="img/catalog/Kvast.jpg"
+                    src="img/catalog/kvast.jpg"
                     width="359"
                     height="578"
                     alt="«Кваст"
@@ -318,7 +330,7 @@
                 </p>
 
                 <div class="form-about">
-                  <a href="blank.html"><p class="form-title">Kvast</p></a>
+                  <a href="blank.html" class="form-title">Kvast</a>
                   <p class="form-text">
                     Информационный сайт<br />
                     для туристов
@@ -352,7 +364,6 @@
         <iframe
           class="map-frame"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533216!2d30.320858716006118!3d59.93871648187625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1613902500053!5m2!1sru!2sby"
-          width="1440"
           height="416"
           style="border: 0"
           allowfullscreen
@@ -360,31 +371,26 @@
         ></iframe>
         <img
           class="map-image"
-          src="img/footer/map.jpg"
+          src="img/footer/map.png"
           width="1440"
           height="416"
           alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
         />
-        <img
-          class="map-marker-image"
-          src="img/footer/map-marker.png"
-          width="231"
-          height="190"
-          alt="Отметка на карте"
-        />
-        <div class="footer-form">
-          <p class="adress-title">NЁRDS DESIGN STUDIO</p>
-          <p class="adress-contacts">
-            191186, Санкт-Петербург,<br />
-            ул. Б. Конюшенная, д. 19/8
-          </p>
-          <p class="adress-phone">
-            тел.
-            <a class="contacts-phone" href="tel:+78126660266"
-              >+7 (812) 275-75-75</a
-            >
-          </p>
-          <a href="form.html" class="button contacts-button">Напишите нам</a>
+        <div class="container">
+          <div class="footer-form">
+            <p class="adress-title">NЁRDS DESIGN STUDIO</p>
+            <p class="adress-contacts">
+              191186, Санкт-Петербург,<br />
+              ул. Б. Конюшенная, д. 19/8
+            </p>
+            <p class="adress-phone">
+              тел.
+              <a class="contacts-phone" href="tel:+78126660266"
+                >+7 (812) 275-75-75</a
+              >
+            </p>
+            <a href="form.html" class="button contacts-button">Напишите нам</a>
+          </div>
         </div>
       </section>
       <div class="footer container">
@@ -473,7 +479,6 @@
             type="text"
             name="name"
             placeholder="Имя Фамилия"
-            required
           />
         </div>
         <div class="appointment-item">
@@ -484,7 +489,6 @@
             type="email"
             name="email"
             placeholder="email@example.com"
-            required
           />
         </div>
         <div class="appointment-item appointment-form-textarea">

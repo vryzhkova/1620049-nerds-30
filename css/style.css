@@ -1167,6 +1167,10 @@ a.sort-item-active {
   position: relative;
 }
 
+.catalog-items:focus-within .form-about{
+  opacity: 1;
+}
+
 .catalog-items:nth-child(2n) {
   margin-right: 0px;
 }

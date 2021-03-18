@@ -1009,7 +1009,6 @@ a.clients-logo:active {
   line-height: 30px;
   font-weight: 700;
   color: var(--color-text-basic-title);
-  margin-bottom: -1px;
   margin-bottom: -2px;
   text-transform: uppercase;
 }

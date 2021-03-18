@@ -12,7 +12,7 @@
   font-family: "Roboto";
   src: url("../fonts/robotobold.woff2") format("woff2"),
     url("../fonts/robotobold.woff") format("woff");
-  font-weight: 500;
+  font-weight: 700;
   font-style: normal;
 }
 
@@ -20,7 +20,7 @@
   font-family: "Roboto";
   src: url("../fonts/robotomedium.woff2") format("woff2"),
     url("../fonts/robotomedium.woff") format("woff");
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal;
 }
 
@@ -45,6 +45,26 @@
   --background-color-toggle: #ababab;
   --color-input-price-controls: #283136;
   --button-filter-active: rgba(0, 0, 0, 0.3);
+  --box-shadow-button:  rgba(0, 1, 1, 0.1);
+  --background-range-controls: #d7dcde;
+  --background-bar: #00ca74;
+  --toggle-box-shadow: #cfcfcf;
+  --modal-box-shadow: rgba(0, 0, 0, 0.4);
+  --input-border: #000000;
+  --modal-invalid: #e74246;
+  --about-us-before: #fb565a;
+  --social-button-lg: #e1e1e1;
+  --social-button-lg-main: #ffffff;
+  --social-button-lg-hover: #e74246;
+  --social-button-lg-active: #d7373b;
+  --social-button-box-shadow: rgba(0, 1, 1, 0.1);
+  --pagination-items-box-shadow: #dbdbdb;
+  --slider-controls-box-shadow: #ffffff;
+  --slider-controls-box-shadow-c: #c1c1c1;
+  --catalog-items-before-bs: rgba(0, 0, 0, 0.25);
+  --site-navigation-item-active: #FB565A;
+  --appointment-item-border: #b4b9bb;
+  --appointment-form-border: #d7dcde;
 }
 
 /* Text */
@@ -167,7 +187,7 @@ a.main-header-logo:active {
 }
 
 .site-navigation-item-active {
-  border-bottom: 2px solid red;
+  border-bottom: 2px solid var(--site-navigation-item-active);
 }
 
 .user-busket {
@@ -281,7 +301,7 @@ a.basket:active {
 }
 
 .more:active {
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--social-button-box-shadow);
   border-radius: 3px;
   color: var(--text-active);
 }
@@ -289,7 +309,8 @@ a.basket:active {
 .slider-controls {
   position: absolute;
   bottom: 96px;
-  left: 47%;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 10;
   display: flex;
   width: 88px;
@@ -307,7 +328,7 @@ a.basket:active {
 }
 
 .slider-controls .current {
-  box-shadow: inset 0 0 0 5px #ffffff, inset 0 0 0 7px #c1c1c1;
+  box-shadow: inset 0 0 0 5px var(--slider-controls-box-shadow), inset 0 0 0 7px var(--slider-controls-box-shadow-c);
 }
 
 /* Services*/
@@ -367,8 +388,8 @@ a.basket:active {
 }
 
 .button-website:active {
-  background: #d7373b;
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background: var(--background-button-click);
+  box-shadow: inset 0px 3px 0px var(--box-shadow-button);
   color: var(--text-active);
 }
 
@@ -382,7 +403,7 @@ a.basket:active {
 
 .button-application:active {
   background: var(--button-green-click);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--box-shadow-button);
   color: var(--text-active);
 }
 
@@ -396,7 +417,7 @@ a.basket:active {
 
 .button-presentation:active {
   background: var(--button-yellow-click);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--box-shadow-button);
   color: var(--text-active);
 }
 
@@ -408,7 +429,7 @@ a.basket:active {
   overflow: hidden;
   border-style: inset;
   border: none;
-  background: #eeeeee;
+  background: var(--background-header);
   margin: 0 auto;
 }
 
@@ -457,7 +478,7 @@ a.basket:active {
   content: " ";
   width: 25px;
   height: 2px;
-  background: #fb565a;
+  background: var(--about-us-before);
   position: absolute;
   left: -37px;
   bottom: 12px;
@@ -726,6 +747,7 @@ a.clients-logo:active {
 .contacts-button:active {
   background-color: var(--background-button-click);
   color: var(--text-active);
+  box-shadow: inset 0px 3px 0px var(--box-shadow-button);
 }
 
 .social-button {
@@ -736,17 +758,17 @@ a.clients-logo:active {
   vertical-align: baseline;
   font-size: 16px;
   border-radius: 50%;
-  background: linear-gradient(0deg, #e1e1e1, #e1e1e1), #ffffff;
+  background: linear-gradient(0deg, var(--social-button-lg),  var(--social-button-lg)),  var(--social-button-lg-main);
   position: relative;
 }
 
 .social-button:hover {
-  background: linear-gradient(0deg, #e74246, #e74246), #ffffff;
+  background: linear-gradient(0deg, var(--social-button-lg-hover), var(--social-button-lg-hover)), var(--social-button-lg-main);
 }
 
 .social-button:active {
-  background: linear-gradient(0deg, #d7373b, #d7373b), #ffffff;
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  background: linear-gradient(0deg, var(--social-button-lg-active), var(--social-button-lg-active)), var(--social-button-lg-main);
+  box-shadow: inset 0px 3px 0px var(--social-button-box-shadow);
   fill-opacity: 0.3;
 }
 
@@ -848,12 +870,12 @@ a.clients-logo:active {
 
 .range-controls .scale {
   height: 2px;
-  background: #d7dcde;
+  background: var(--background-range-controls);
 }
 
 .range-controls .bar {
   height: 2px;
-  background: #00ca74;
+  background: var(--background-bar);
   width: 70%;
 }
 
@@ -861,10 +883,10 @@ a.clients-logo:active {
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
+  border: 8px solid var(--background-color);
   background-color: var(--background-color-toggle);
   border-radius: 50%;
-  box-shadow: 0 2px 1px 0 #cfcfcf;
+  box-shadow: 0 2px 1px 0 var(--toggle-box-shadow);
   position: absolute;
   top: 31px;
   left: 0;
@@ -988,6 +1010,7 @@ a.clients-logo:active {
   font-weight: 700;
   color: var(--color-text-basic-title);
   margin-bottom: -1px;
+  margin-bottom: -2px;
   text-transform: uppercase;
 }
 
@@ -1052,7 +1075,7 @@ a.clients-logo:active {
 .button-filter:active,
 .button-filter:focus {
   background-color: var(--pagination-button-click);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--social-button-box-shadow);
   border-radius: 3px;
   color: var(--button-filter-active);
 }
@@ -1170,7 +1193,7 @@ a.sort-item-active {
 
 .catalog-items:hover .catalog-images::before {
   opacity: 1;
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 6px 15px var(--catalog-items-before-bs);
 }
 
 .form-button:hover {
@@ -1179,6 +1202,7 @@ a.sort-item-active {
 
 .form-button:active {
   background-color: var(--background-button-click);
+  box-shadow: inset 0px 3px 0px var(--box-shadow-button);
 }
 
 /* Form */
@@ -1186,7 +1210,6 @@ a.sort-item-active {
 .form-about {
   background-color: var(--background-header);
   width: 103%;
-  /* min-height: 150px; */
   padding-top: 27px;
   padding-bottom: 54px;
   position: absolute;
@@ -1259,7 +1282,7 @@ a.sort-item-active {
 }
 
 .pagination-items-active {
-  box-shadow: inset 0px 0px 0px 3px #dbdbdb;
+  box-shadow: inset 0px 0px 0px 3px var(--pagination-items-box-shadow);
   background-color: var(--background-color);
 }
 
@@ -1283,7 +1306,7 @@ a.pagination-items:hover {
 a.pagination-items:focus,
 a.pagination-items:active {
   background: var(--pagination-button-click);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--social-button-box-shadow);
   color: var(--button-filter-active);
 }
 
@@ -1307,7 +1330,7 @@ a.pagination-items:active {
   margin: auto;
   padding: 63px 100px 84px 100px;
   background-color: var(--background-color);
-  box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 20px 40px var(--modal-box-shadow);
   z-index: 2;
 }
 
@@ -1395,18 +1418,18 @@ a.pagination-items:active {
 
 .appointment-item input:hover,
 .appointment-item textarea:hover {
-  border: 2px solid #b4b9bb;
+  border: 2px solid var(--appointment-item-border);
 }
 
 .appointment-item input:focus,
 .appointment-item textarea:focus {
   color: var(--color-text-footer);
-  border: 2px solid #000000;
+  border: 2px solid var(--input-border);
 }
 
 .appointment-item input:invalid {
   color: var(--background-button-hover);
-  border: 2px solid #e74246;
+  border: 2px solid var(--modal-invalid);
 }
 
 .appointment-form {
@@ -1435,12 +1458,12 @@ a.pagination-items:active {
 
 .appointment-form input {
   padding-left: 13px;
-  border: 2px solid #d7dcde;
+  border: 2px solid var(--appointment-item-border);
   box-sizing: border-box;
 }
 
 .appointment-form textarea {
-  border: 2px solid #d7dcde;
+  border: 2px solid var(--appointment-item-border);
 }
 
 /* Animations */

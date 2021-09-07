@@ -1,4 +1,5 @@
 # Личный проект «Нёрдс»
+https://vryzhkova.github.io/1620049-nerds-30/
 
 - Студент: [Виктория Рыжкова](https://up.htmlacademy.ru/htmlcss/30/user/1620049).
 - Наставник: [Алина Шаймиева](https://htmlacademy.ru/profile/id74223).
